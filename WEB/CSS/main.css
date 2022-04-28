@@ -1,0 +1,443 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400);
+    @import url(https://fonts.googleapis.com/css?family=Playfair+Display:900);
+
+    footer {
+        position: relative;
+        bottom: -25px;
+    }
+
+    .line {
+        font-family: 'Raleway', Arial, sans-serif;
+        position: relative;
+        float: center;
+        color: #bdbdbd;
+        margin: 60px 25px 60px 100px;
+        max-width: 1300px;
+        width: 300%;
+        text-align: center;
+        font-size: 36px;
+        border-top: 3px solid #bdbdbd;
+        padding-top: 6px;
+    }
+
+    .line * {
+        -webkit-box-sizing: padding-box;
+        box-sizing: padding-box;
+    }
+
+    .line h1,
+    .line h5 {
+        margin: 75px 0px 20px 0px;
+        line-height: 0em;
+    }
+
+    .line h1 {
+        font-family: 'Playfair Display', Arial, sans-serif;
+        font-size: 2.8em;
+        text-transform: uppercase;
+    }
+
+    .line h5 {
+        line-height: 15px;
+        font-weight: 700;
+        display: table;
+        position: relative;
+        display: inline-block;
+        width: 50px;
+        padding: 20px 10px;
+    }
+
+    .line h5:before,
+    .line h5:after {
+        position: absolute;
+        height: 3px;
+        content: '';
+        background: #bdbdbd;
+        width: 1000%;
+        top: 50%;
+    }
+
+    .line h5:before {
+        left: -1000%;
+    }
+
+    .line h5:after {
+        right: -1000%;
+    }
+
+    /* Demo purposes only */
+    body {
+        background-color: #000000;
+    }
+
+
+
+
+
+    .nav {
+        font-family: 'Muli', Arial, sans-serif;
+        font-size: 18px;
+        letter-spacing: 1.5px;
+        line-height: 1em;
+        margin: 15px 40px;
+        text-transform: uppercase;
+    }
+
+    .nav li {
+        display: inline-block;
+        list-style: outside none none;
+        margin: 0.5em 0.6em;
+        padding: 12px 15px;
+        position: relative;
+    }
+
+    .nav li a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .nav li:before,
+    .nav li:after {
+        transition: all 0.35s ease;
+        height: 2px;
+        width: 35%;
+        background-color: #528cb3;
+        position: absolute;
+        content: '';
+        opacity: 0;
+    }
+
+    .nav li:before {
+        top: 0;
+        left: 0;
+    }
+
+    .nav li:after {
+        bottom: 0;
+        right: 0;
+    }
+
+    .nav li:hover:before,
+    .nav li.hover:before,
+    .nav li:hover:after,
+    .nav li.hover:after {
+        opacity: 1;
+    }
+
+    .nav li:hover:before,
+    .nav li.hover:before {
+        left: 65%;
+    }
+
+    .nav li:hover:after,
+    .nav li.hover:after {
+        right: 65%;
+    }
+
+    /*drop down*/
+    /* .dropbtn {
+        background-color: #212121;
+        color: white;
+        padding: 16px 32px;
+        font-size: 16px;
+        border: none;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        margin-left: -105px;
+        background-color: #212121;
+        color: black;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 5px 5px;
+        text-decoration: none;
+        display: block;
+    } */
+
+    #brand_1:hover {
+        background-color: #5e0000;
+    }
+
+    #brand_2:hover {
+        background-color: #005e14;
+    }
+
+    #brand_3:hover {
+        background-color: #0f2564;
+    }
+
+    #brand_4:hover {
+        background-color: #c704bd;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+        background-color: #212121;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    /* Icon set - http://ionicons.com */
+    @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,700);
+    @import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+
+    .card {
+        font-family: 'Raleway', Arial, sans-serif;
+        position: relative;
+        float: left;
+        overflow: hidden;
+        margin: 10px 2.55% 40px 2%;
+        min-width: 220px;
+        max-width: 310px;
+        width: 100%;
+        color: #333333;
+        text-align: center;
+        background-color: #ffffff;
+        line-height: 1.6em;
+        border-radius: 15%;
+    }
+
+    .card * {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-transition: all 0.6s ease;
+        transition: all 0.6s ease;
+    }
+
+    .card .image {
+        position: relative;
+    }
+
+    .card img {
+        max-width: 100%;
+        vertical-align: top;
+        -webkit-transition: opacity 0.35s;
+        transition: opacity 0.35s;
+    }
+
+    .card .icons,
+    .card .add-to-cart {
+        position: absolute;
+        left: 20px;
+        right: 20px;
+        opacity: 0;
+    }
+
+    .card .icons {
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
+        top: 20px;
+        /* display: flex;
+        justify-content: space-between; */
+    }
+
+    .card .icons a {
+        padding: 12px 84px;
+        text-decoration: none;
+        width: 32.5%;
+        background: #ffffff;
+    }
+
+    .card .icons a:hover {
+        background: #000000;
+    }
+
+    .card .icons a:hover i {
+        color: #ffffff;
+        opacity: 1;
+    }
+
+    .card .icons i {
+        line-height: 46px;
+        font-size: 20px;
+        color: #000000;
+        text-align: center;
+        opacity: 0.7;
+        margin: 0;
+    }
+
+    .card .add-to-cart {
+        position: absolute;
+        bottom: 55px;
+        -webkit-transform: translateY(100%);
+        transform: translateY(100%);
+        font-size: 0.8em;
+        color: #000000;
+        line-height: 46px;
+        letter-spacing: 1.5px;
+        background-color: #ffffff;
+        font-weight: 700;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    .card .add-to-cart:hover {
+        background: #000000;
+        color: #ffffff;
+    }
+
+    .card figcaption {
+        padding: 20px 20px 30px;
+    }
+
+    .card h2,
+    .card p {
+        margin: 0;
+        text-align: left;
+    }
+
+    .card h2 {
+        margin-bottom: 10px;
+        font-weight: 700;
+    }
+
+    .card p {
+        margin-bottom: 15px;
+        font-size: 0.85em;
+        font-weight: 500;
+    }
+
+    .card .price {
+        font-size: 1.3em;
+        opacity: 0.5;
+        font-weight: 700;
+    }
+
+    .card:hover img,
+    .card.hover img {
+        opacity: 0.8;
+    }
+
+    .card:hover .icons,
+    .card.hover .icons,
+    .card:hover .add-to-cart,
+    .card.hover .add-to-cart {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    /* #product_name:hover {
+        font-size: 30px;
+        text-decoration: underline;
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 15px 0px;
+    } */
+
+    .dropBtn {
+        background-color: #000000;
+        color: white;
+        padding: 6px;
+        font-size: 16px;
+        border: none;
+    }
+
+    .no-bg-color {
+        background-color: transparent;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 200px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown:hover .dropBtn {
+        background-color: white;
+        color: black;
+    }
+
+    input [type=checkbox] {
+        cursor: pointer;
+        background-color: green;
+    }
+
+    .card {
+        /* width: 415px; */
+        height: 400px;
+    }
+
+    .card img {
+        width: 100%;
+        height: 400px;
+    }
+
+    #heading {
+        font-size: 50px;
+        font-weight: bolder;
+        font-family: 'Playfair Display', Arial, sans-serif;
+        text-decoration: underline;
+        text-shadow: 3px 3px black;
+    }
+
+    .cardSlider {
+        width: 18rem;
+        border-radius: 10px;
+        border: none;
+        background-color: black;
+        /* background-color: transparent; */
+        /* border-radius: 50%; */
+    }
+
+    .flip-card-front {
+        background-color: black;
+    }
+
+    .cardSlider img,
+    .card-body {
+        border-radius: 50%;
+    }
+
+    .cardSlider img:hover,
+    .card-body:hover,.card:hover {
+        box-shadow: 10px 4px 10px #ffffff99, -10px 4px 10px #ffffff99;
+    }
+    .nav li{
+        /* position: relative;
+        left: 100px; */
+        display: block;
+        margin: 35px auto -10px auto;
+    }

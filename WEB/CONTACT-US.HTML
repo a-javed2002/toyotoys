@@ -1,0 +1,690 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>CONTACT-US</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.0.2 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/product.css">
+    <link rel="stylesheet" href="CSS/R-PRODUCT.CSS">
+    <script src="JS/MAIN.JS"></script>
+    <script src="JS/CART.JS"></script>
+    <script src="https://maps.google.com/maps/api/js?sensor=false"></script>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        /* background-image: linear-gradient(to right, #ffffffc4, #000000); */
+    }
+
+    .responsive-map {
+        overflow: hidden;
+        padding-bottom: 56.25%;
+        position: relative;
+        height: 0;
+    }
+
+    .responsive-map iframe {
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
+
+    .display {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+        width: 20%;
+    }
+
+    .display img {
+        padding: 5px;
+        width: 50px;
+        border-radius: 50%;
+    }
+
+    .display img:hover {
+        opacity: 0.75;
+    }
+
+    #form {
+        /* background-color: rgb(158 2 158);
+        border: 4px solid rgb(92 4 92); */
+        border-radius: 20px;
+        margin: 30px 100px;
+    }
+
+    #form textarea {
+        border-radius: 5px;
+        outline: none;
+        border: none;
+        background-color: #8ac6e2;
+        /* outline: 6px #eedd45 groove; */
+    }
+
+    #form input {
+        width: 100%;
+        border-radius: 5px;
+        margin: 10px 0px;
+        outline: none;
+        border: none;
+        background-color: #8ac6e2;
+    }
+
+    #form input[type=submit] {
+        background-color: #ffa500;
+        padding: 10px;
+    }
+
+    a {
+        color: #000000;
+    }
+
+    a:hover {
+        color: #000000;
+        font-size: 20px;
+    }
+
+    #nav-item-4:hover {
+        font-size: 16px;
+    }
+
+    .email-links a:hover {
+        margin-top: 18px;
+        display: block;
+        /* text-align: center; */
+        /* border: 3px solid red; */
+    }
+
+    #embedMap {
+        width: 100%;
+        height: 850px;
+    }
+
+    #embedMap img {
+        width: 20px;
+        height: 20px;
+    }
+
+    #disappear3 {
+        margin: 0px -25px;
+    }
+
+    #footer {
+        width: 104%;
+        position: relative;
+        left: -15px;
+    }
+
+    #form {
+        background-color: #1ba1e2;
+        border-radius: 25px;
+    }
+</style>
+
+<body class="container-fluid" onload="showPosition();">
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <div class="row" id="head">
+        <div class="col-lg-1 col-md-1 col-sm-1"></div>
+        <div class="col-lg-1 col-md-1 col-sm-1"></div>
+        <div class="col-lg-4 col-md-4 col-sm-4"><img src="ICONS/location.png" title="LOCATION" alt="LOCATION"
+                width="30px" style="filter: invert(100%);">North Nazimabad, Block-A, A-245</div>
+        <div class="col-lg-3"><img src="ICONS/mobile.png" title="CONTACT" alt="MOBILE" width="30px"
+                style="filter: invert(100%);">+92 322 924 3965;+92 321 567 5678
+        </div>
+        <div class="col-lg-3 img-socialMedia">
+            <a href="https://www.facebook.com/" target="_blank"><img src="ICONS/FACEBOOK.png" alt="FACEBOOK"
+                    width="30px" title="FACEBOOK"></a>
+            <a href="https://twitter.com/home?lang=en" target="_blank"><img src="ICONS/TWITTER.png" alt="TWITTER"
+                    width="30px" title="TWITTER"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="ICONS/INSTAGRAM.png" alt="INSTAGRAM"
+                    width="40px" style="border: 2px solid black;border-radius: 50%;" title="INSTAGRAM"></a>
+            <a href="https://www.linkedin.com/signup" target="_blank"><img src="ICONS/LINKEDIN.png" alt="LINKEDIN"
+                    width="30px" title="LINKEDIN"></a>
+            <a href="https://www.youtube.com/" target="_blank"><img src="ICONS/YOUTUBE.png" alt="YOUTUBE" width="30px"
+                    title="YOUTUBE"></a>
+        </div>
+    </div>
+
+    <div class="row" id="disappear3">
+        <div class="col-12" id="d-wrapper">
+            <div class="zig-zag-bottom">
+                <div class="row" style="width: 100%;height: 40px;">
+                    <div class="col-lg-1">
+                        <a href="INDEX.HTML" id="toyo-toys">
+                            <img src="ICONS/logo.png" alt="kids" title="TOYO-TOYS">
+                        </a>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-3"></div>
+                    <div class="col-lg-5 flex mt-3" style="position: relative;left: -100px;">
+                        <div style="position: relative;left: 150px;">
+                            <div style="padding: 80px 5px 20px 5px;z-index: 5;position: relative;top: -25px;">
+                                <span style="position: relative;top: -40px;" id="nav-item-4"><a href="INDEX.HTML"
+                                        style="font-family: cursive;color: #00fff2;">HOME</a></span>
+                            </div>
+                        </div>
+                        <!-- <div id="nav-item-2" style="position: relative;top: 12px;"><a href="##">TIMETABLE</a></div> -->
+                        <!-- <div id="nav-item-2" style="position: relative;top: 12px;">ALL PRODUCTS</div> -->
+                        <div class="dropdown" style="position: relative;left: 12px">
+                            <a href="###" style="position: relative;top: 110px;left: 60px;"><span class="active"
+                                    style="padding: 90px 15px 20px 15px;z-index: 5;position: relative;top: -50px;background-color: transparent;"><span
+                                        style="position: relative;top: -48px;font-weight: bolder;font-family: cursive;color: yellow;">PRODUCTS</span></span></a>
+                            <div class="dropdown-content" style="background-color: #5f53ff;margin-left: 100px;">
+                                <div class="row" style="margin-left: -20px;">
+                                    <div class="col-lg-12 text-center mt-3 mb-3">
+                                        <a href="BRAND.HTML"><span>
+                                                <h1>ALL BRANDS</h1>
+                                            </span></a>
+                                    </div>
+                                </div>
+                                <div class="row" style="margin-left: 140px;">
+                                    <div class="col-lg-2 mb-3" id="column-1">
+                                        <a href="MARVEL/INDEX.HTML" style="margin-top: 13px;"><span
+                                                class="heading">MARVEL</span></a>
+                                        <a href="MARVEL/BLACK-PANTHER.HTML">BLACK-PANTHER</a>
+                                        <a href="MARVEL/CAPTAIN-AMERICA.html">CAPTAIN AMERICA</a>
+                                        <a href="MARVEL/CAR.HTML">CAR</a>
+                                        <a href="MARVEL/DEADPOOL.HTML">DEADPOOL</a>
+                                        <a href="MARVEL/DR-STRANGE.HTML">DR-STRANGE</a>
+                                        <a href="MARVEL/GAUNTLET.HTML">GAUNTLET</a>
+                                        <a href="MARVEL/HULK-PLUSH.HTML">HULK PLUSH</a>
+                                        <a href="MARVEL/IRON-MAN.HTML">IRONMAN</a>
+                                        <a href="MARVEL/LEGOMARVELLOKI.HTML">LEGOS</a>
+                                        <a href="MARVEL/HULK.HTML">HULK</a>
+                                        <a href="MARVEL/NICK-FURY.HTML">NICK-FURY</a>
+                                        <a href="MARVEL/SHANG-CHI.html">SHANG-CHI</a>
+                                        <a href="MARVEL/SHIELD.HTML">SHIELD</a>
+                                        <a href="MARVEL/SPIDERMAN.HTML">SPIDERMAN</a>
+                                        <a href="MARVEL/THANOS.HTML">THANOS</a>
+                                        <a href="MARVEL/THEINFINITY.HTML">INFINITY</a>
+                                        <a href="MARVEL/THOR.HTML">THOR</a>
+                                        <a href="MARVEL/VENOM.HTML" style="margin-bottom: 13px;">VENOM</a>
+                                    </div>
+                                    <div class="col-lg-2" id="column-2">
+                                        <a href="BEN-10/INDEX.HTML" style="margin-top: 13px;"><span
+                                                class="heading">BEN10</span></a>
+                                        <a href="BEN-10/ARCHERY.HTML">ARCHERY</a>
+                                        <a href="BEN-10/CAR.HTML">CAR</a>
+                                        <a href="BEN-10/FEEDBACK.HTML">FEEDBACK</a>
+                                        <a href="BEN-10/GAME.HTML">BOARD GAME</a>
+                                        <a href="BEN-10/GUN-BUBBLE.HTML">BUBBLE GUN</a>
+                                        <a href="BEN-10/GUN-WATER.HTML">WATER GUN</a>
+                                        <a href="BEN-10/LEGO.HTML">LEGOS</a>
+                                        <a href="BEN-10/OMNITRIX.HTML">OMNITRIX</a>
+                                        <a href="BEN-10/PLANE.HTML">PLANE</a>
+                                        <a href="BEN-10/R-CAR.HTML">REMOTE CONTROL CAR</a>
+                                        <a href="BEN-10/SCOOTY.HTML">SCOOTY</a>
+                                        <a href="BEN-10/SKATEBOARD.HTML" style="margin-bottom: 13px;">SKATEBOARD</a>
+                                    </div>
+                                    <div class="col-lg-2" id="column-3">
+                                        <a href="DISNEP/INDEX.HTML" style="margin-top: 13px;"><span
+                                                class="heading">DISNEP</span></a>
+                                        <a href="DISNEP/Arendelle Castle.html">ARENDELLE</a>
+                                        <a href="DISNEP/Ariel Clamshell Bubble Wand.html">ARIEL CLAMSHELL</a>
+                                        <a href="DISNEP/Belle and Rapunzels Royal Stables.html">BELLE & RAPUNZEL</a>
+                                        <a href="DISNEP/Belle and the Beasts Castle.html">BELLE & CASTLE</a>
+                                        <a href="DISNEP/Bingo Plush.html">BINGO</a>
+                                        <a href="DISNEP/Bow and Arrow.html">BOW & ARROW</a>
+                                        <a href="DISNEP/Cinderella.html">CINDERELLA</a>
+                                        <a href="DISNEP/Daisy Duck Plush.html">DAISY DUCK</a>
+                                        <a href="DISNEP/Disney nuiMOs Outfit.html">NUIMOS</a>
+                                        <a href="DISNEP/Disney Parks Wishables Mystery Plush.html">PARK</a>
+                                        <a href="DISNEP/Donald Duck Plush.html">DONALD DUCK</a>
+                                        <a href="DISNEP/Dory Plush.html">DORY</a>
+                                        <a href="DISNEP/Jaguar Plush.html">JAGUAR</a>
+                                        <a href="DISNEP/LEGO Ariels Underwater Palace.html">LEGO</a>
+                                        <a href="DISNEP/Littles Belle Cottage.html">BELLE & COTTAGE</a>
+                                        <a href="DISNEP/Littles Jasmine.html">JASMINE</a>
+                                        <a href="DISNEP/Mickey Mouse Plush.html">MICKEY MOUSE</a>
+                                        <a href="DISNEP/Pluto Plush.HTML">PLUTO</a>
+                                        <a href="DISNEP/Princess Magical Tea.html">PRINCESS</a>
+                                        <a href="DISNEP/Rapunzel Tower.html">RAPUNZEL & TOWER</a>
+                                        <a href="DISNEP/Rolly Plush.html">ROLLY</a>
+                                        <a href="DISNEP/Simba Plush.html">SIMBA</a>
+                                        <a href="DISNEP/small world Board Game.html">BOARD GAME</a>
+                                        <a href="DISNEP/Snow White Disney Parks Wishables Plush.html">SNOW WHITE</a>
+                                        <a href="DISNEP/Sven Plush.html" style="margin-bottom: 13px;">SVEN</a>
+                                    </div>
+                                    <div class="col-lg-2" id="column-4">
+                                        <a href="PIXAR/INDEX.HTML" style="margin-top: 13px;"><span
+                                                class="heading">PIXAR</span></a>
+                                        <a href="PIXAR/Baby Shark.html">BABY SHARK</a>
+                                        <a href="PIXAR/BLACK-WIDOW.HTML">BLACK WIDOW</a>
+                                        <a href="PIXAR/BullseyeInteractive.HTML">BULLS EYE</a>
+                                        <a href="PIXAR/BuzzLightyear.HTML">BUZZ LIGHT</a>
+                                        <a href="PIXAR/COCO-DELUXE.HTML">COCO-DELUXE</a>
+                                        <a href="PIXAR/ETERNALS.HTML">ETERNALS</a>
+                                        <a href="PIXAR/FORKY-TALKING.HTML">FORKY</a>
+                                        <a href="PIXAR/ForkyPlush.HTML">FORKY-PLUSH</a>
+                                        <a href="PIXAR/Frog Bubble Camera.html">FROG</a>
+                                        <a href="PIXAR/GAMORA.HTML">GAMORA</a>
+                                        <a href="PIXAR/HAWKEYE.HTML">HAWNEYE</a>
+                                        <a href="PIXAR/Jessie-Interactive.HTML">JESSIE</a>
+                                        <a href="PIXAR/Jumbo Bubble Jar.html">JUMBO</a>
+                                        <a href="PIXAR/LEGO-DEVIANT.HTML">LEGO</a>
+                                        <a href="PIXAR/Luca-Figurine.HTML">LUCA</a>
+                                        <a href="PIXAR/MAKKARI.HTML">MAKKARI</a>
+                                        <a href="PIXAR/Merida Light-Up Wand.html">MERIDA</a>
+                                        <a href="PIXAR/MiguelHector.HTML">MIGUEL</a>
+                                        <a href="PIXAR/No Spill Big Bubble.html">BIG BUBBLE</a>
+                                        <a href="PIXAR/No Spill Bubble Machine.html">BUBBLE MACHINE</a>
+                                        <a href="PIXAR/No Spill.html">NO SPILL</a>
+                                        <a href="PIXAR/Puppy Bubble Maker.html">PUPPY BUBBLE</a>
+                                        <a href="PIXAR/Raya and the Last Dragon.html">RAYA</a>
+                                        <a href="PIXAR/RexTalking.HTML">REX</a>
+                                        <a href="PIXAR/Toy-Story-Alien.HTML">ALIEN</a>
+                                        <a href="PIXAR/ToyStoryChogattai.HTML">CHOGATTAI</a>
+                                        <a href="PIXAR/Toystoryfig.HTML">ACTION FIGURES</a>
+                                        <a href="PIXAR/UP-DELUXE.HTML">UP-DELUXE</a>
+                                        <a href="PIXAR/Woody-Action.HTML">WOODY-ACTION</a>
+                                        <a href="PIXAR/Woody-Interactive.HTML">WOODY-INTERACTIVE</a>
+                                        <a href="PIXAR/WOODYROBO.HTML">WOODY-ROBO</a>
+                                        <a href="PIXAR/Zurg-Talking.HTML" style="margin-bottom: 13px;">ZURG-TALKING</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <a href="###" style="position: relative;top: 110px;left: 20px;"><span
+                                    style="padding: 90px 5px 20px 5px;z-index: 5;position: relative;top: -50px;"><span
+                                        id="nav-item-3"
+                                        style="position: relative;top: -48px;font-weight: bolder;font-family: cursive;">FEATURES</span></span></a>
+                            <div class="dropdown-content-2" style="background-color: #5f53ff;">
+                                <div class="row imp-links" style="margin-left: -20px;">
+                                    <a href="ABOUT-US.HTML">About Us</a>
+                                    <!-- <a href="">Blog</a>
+                                    <a href="">Events</a>
+                                    <a href="">More Search</a>
+                                    <a href="">Testimonials</a>
+                                    <a href="">Services</a>
+                                    <a href="">Supports</a> -->
+                                    <a href="VOUCHER.HTML">Vouchers</a>
+                                    <a href="PRIVACY.HTML">Privacy Policy</a>
+                                    <a href="TERMS.HTML">Terms & Condition</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="position: relative;left: 0px;">
+                            <div
+                                style="padding: 80px 0px 30px 0px;z-index: 5;position: relative;top: -25px;background-color: #ffc400;border-bottom-left-radius: 50%;border-bottom-right-radius: 50%;">
+                                <span style="position: relative;top: -40px;"><a href="CONTACT-US.HTML" id="nav-item-4"
+                                        style="font-family: cursive;color: #ffffff;">CONTACT</a></span>
+                            </div>
+                        </div>
+                        <a href="COMPARE.HTML">
+                            <div id="nav-item-5" style="position: relative;top: 12px;font-family: cursive;">
+                                COMPARE</div>
+                        </a>
+                        <a href="CART.HTML">
+                            <div id="nav-item-6" style="position: relative;top: -20px;">
+                                <span id="counter">0</span><img src="ICONS/CART.png" alt="CART" title="CART"
+                                    class="shake">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" id="disappear1" style="background-color: #1b90e2;">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="row">
+                <div class="col-lg-12">
+                    <span id="logo"><img src="ICONS/logo.png" alt="abc" title="TOYO-TOYS"></span>
+                    <span id="new-nav-more">
+                        <img src="ICONS/MORE.png" alt="abc" id="more" title="MORE OPTIONS"
+                            style="float: right;margin: 10px 0px 5px 0px;cursor: pointer;">
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" id="disappear2">
+        <div class="col-lg-12 col-md-12 col-sm-12" id="nav-items">
+            <div>
+                <a href="CART.HTML">
+                    <img src="ICONS/CART.png" alt="abc" width="80px" title="CART" class="shake" id="nav-item-6"
+                        style="float: right;margin: 10px 0px 5px 0px;">
+                </a>
+            </div>
+            <div class="nav-list">
+                <a href="INDEX.HTML">HOME</a>
+            </div>
+            <div class="nav-list">
+                <div id="products" style="cursor: pointer;">PRODUCTS</div>
+                <div style="background-color: #269c57;margin: 10px;" id="product-items">
+                    <a href="../BRAND.HTML"><span style="padding: 20px 0px;">ALL BRANDS</span></a>
+                    <div id="brand_marvel" style="cursor: pointer;">MARVEL</div>
+                    <div id="marvel-items" class="links" style="background-color: #990000;margin: 10px 20px;">
+                        <a href="MARVEL/INDEX.HTML"><span class="heading">MARVEL</span></a>
+                        <a href="MARVEL/BLACK-PANTHER.HTML">BLACK-PANTHER</a>
+                        <a href="MARVEL/CAPTAIN-AMERICA.html">CAPTAIN AMERICA</a>
+                        <a href="MARVEL/CAR.HTML">CAR</a>
+                        <a href="MARVEL/DEADPOOL.HTML">DEADPOOL</a>
+                        <a href="MARVEL/DR-STRANGE.HTML">DR-STRANGE</a>
+                        <a href="MARVEL/GAUNTLET.HTML">GAUNTLET</a>
+                        <a href="MARVEL/HULK-PLUSH.HTML">HULK PLUSH</a>
+                        <a href="MARVEL/HULK.HTML">HULK</a>
+                        <a href="MARVEL/IRON-MAN.HTML">IRONMAN</a>
+                        <a href="MARVEL/LEGOMARVELLOKI.HTML">LEGOS</a>
+                        <a href="MARVEL/HULK.HTML">HULK</a>
+                        <a href="MARVEL/NICK-FURY.HTML">NICK-FURY</a>
+                        <a href="MARVEL/SHANG-CHI.html">SHANG-CHI</a>
+                        <a href="MARVEL/SHIELD.HTML">SHIELD</a>
+                        <a href="MARVEL/SPIDERMAN.HTML">SPIDERMAN</a>
+                        <a href="MARVEL/THANOS.HTML">THANOS</a>
+                        <a href="MARVEL/THEINFINITY.HTML">INFINITY</a>
+                        <a href="MARVEL/THOR.HTML">THOR</a>
+                        <a href="MARVEL/VENOM.HTML" style="margin-bottom: 13px;">VENOM</a>
+                    </div>
+                    <div id="brand_ben10" style="cursor: pointer;">BEN10</div>
+                    <div id="ben10-items" class="links" style="background-color: #1a9b00;margin: 10px 20px;">
+                        <a href="BEN-10/INDEX.HTML"><span class="heading">BEN10</span></a>
+                        <a href="BEN-10/ARCHERY.HTML">ARCHERY</a>
+                        <a href="BEN-10/CAR.HTML">CAR</a>
+                        <a href="BEN-10/FEEDBACK.HTML">FEEDBACK</a>
+                        <a href="BEN-10/GAME.HTML">BOARD GAME</a>
+                        <a href="BEN-10/GUN-BUBBLE.HTML">BUBBLE GUN</a>
+                        <a href="BEN-10/GUN-WATER.HTML">WATER GUN</a>
+                        <a href="BEN-10/LEGO.HTML">LEGOS</a>
+                        <a href="BEN-10/OMNITRIX.HTML">OMNITRIX</a>
+                        <a href="BEN-10/PLANE.HTML">PLANE</a>
+                        <a href="BEN-10/R-CAR.HTML">REMOTE CONTROL CAR</a>
+                        <a href="BEN-10/SCOOTY.HTML">SCOOTY</a>
+                        <a href="BEN-10/SKATEBOARD.HTML" style="margin-bottom: 13px;">SKATEBOARD</a>
+                    </div>
+                    <div id="brand_disney" style="cursor: pointer;">DISNEY</div>
+                    <div id="disney-items" class="links" style="background-color: #0088aa;margin: 10px 20px;">
+                        <a href="DISNEP/INDEX.HTML"><span class="heading">DISNEP</span></a>
+                        <a href="DISNEP/Arendelle Castle.html">ARENDELLE</a>
+                        <a href="DISNEP/Ariel Clamshell Bubble Wand.html">ARIEL CLAMSHELL</a>
+                        <a href="DISNEP/Belle and Rapunzels Royal Stables.html">BELLE & RAPUNZEL</a>
+                        <a href="DISNEP/Belle and the Beasts Castle.html">BELLE & CASTLE</a>
+                        <a href="DISNEP/Bingo Plush.html">BINGO</a>
+                        <a href="DISNEP/Bow and Arrow.html">BOW & ARROW</a>
+                        <a href="DISNEP/Cinderella.html">CINDERELLA</a>
+                        <a href="DISNEP/Daisy Duck Plush.html">DAISY DUCK</a>
+                        <a href="DISNEP/Disney nuiMOs Outfit.html">NUIMOS</a>
+                        <a href="DISNEP/Disney Parks Wishables Mystery Plush.html">PARK</a>
+                        <a href="DISNEP/Donald Duck Plush.html">DONALD DUCK</a>
+                        <a href="DISNEP/Dory Plush.html">DORY</a>
+                        <a href="DISNEP/Jaguar Plush.html">JAGUAR</a>
+                        <a href="DISNEP/LEGO Ariels Underwater Palace.html">LEGO</a>
+                        <a href="DISNEP/Littles Belle Cottage.html">BELLE & COTTAGE</a>
+                        <a href="DISNEP/Littles Jasmine.html">JASMINE</a>
+                        <a href="DISNEP/Mickey Mouse Plush.html">MICKEY MOUSE</a>
+                        <a href="DISNEP/Pluto Plush.HTML">PLUTO</a>
+                        <a href="DISNEP/Princess Magical Tea.html">PRINCESS</a>
+                        <a href="DISNEP/Rapunzel Tower.html">RAPUNZEL & TOWER</a>
+                        <a href="DISNEP/Rolly Plush.html">ROLLY</a>
+                        <a href="DISNEP/Simba Plush.html">SIMBA</a>
+                        <a href="DISNEP/small world Board Game.html">BOARD GAME</a>
+                        <a href="DISNEP/Snow White Disney Parks Wishables Plush.html">SNOW WHITE</a>
+                        <a href="DISNEP/Sven Plush.html">SVEN</a>
+                    </div>
+                    <div id="brand_pixar" style="cursor: pointer;">PIXAR</div>
+                    <div id="pixar-items" class="links" style="background-color: #be5600;margin: 10px 20px 20px 20px;">
+                        <a href="PIXAR/INDEX.HTML"><span class="heading">PIXAR</span></a>
+                        <a href="PIXAR/Baby Shark.html">BABY SHARK</a>
+                        <a href="PIXAR/BLACK-WIDOW.HTML">BLACK WIDOW</a>
+                        <a href="PIXAR/BullseyeInteractive.HTML">BULLS EYE</a>
+                        <a href="PIXAR/BuzzLightyear.HTML">BUZZ LIGHT</a>
+                        <a href="PIXAR/COCO-DELUXE.HTML">COCO-DELUXE</a>
+                        <a href="PIXAR/ETERNALS.HTML">ETERNALS</a>
+                        <a href="PIXAR/FORKY-TALKING.HTML">FORKY</a>
+                        <a href="PIXAR/ForkyPlush.HTML">FORKY-PLUSH</a>
+                        <a href="PIXAR/Frog Bubble Camera.html">FROG</a>
+                        <a href="PIXAR/GAMORA.HTML">GAMORA</a>
+                        <a href="PIXAR/HAWKEYE.HTML">HAWNEYE</a>
+                        <a href="PIXAR/Jessie-Interactive.HTML">JESSIE</a>
+                        <a href="PIXAR/Jumbo Bubble Jar.html">JUMBO</a>
+                        <a href="PIXAR/LEGO-DEVIANT.HTML">LEGO</a>
+                        <a href="PIXAR/Luca-Figurine.HTML">LUCA</a>
+                        <a href="PIXAR/MAKKARI.HTML">MAKKARI</a>
+                        <a href="PIXAR/Merida Light-Up Wand.html">MERIDA</a>
+                        <a href="PIXAR/MiguelHector.HTML">MIGUEL</a>
+                        <a href="PIXAR/No Spill Big Bubble.html">BIG BUBBLE</a>
+                        <a href="PIXAR/No Spill Bubble Machine.html">BUBBLE MACHINE</a>
+                        <a href="PIXAR/No Spill.html">NO SPILL</a>
+                        <a href="PIXAR/Puppy Bubble Maker.html">PUPPY BUBBLE</a>
+                        <a href="PIXAR/Raya and the Last Dragon.html">RAYA</a>
+                        <a href="PIXAR/RexTalking.HTML">REX</a>
+                        <a href="PIXAR/Toy-Story-Alien.HTML">ALIEN</a>
+                        <a href="PIXAR/ToyStoryChogattai.HTML">CHOGATTAI</a>
+                        <a href="PIXAR/Toystoryfig.HTML">ACTION FIGURES</a>
+                        <a href="PIXAR/UP-DELUXE.HTML">UP-DELUXE</a>
+                        <a href="PIXAR/Woody-Action.HTML">WOODY-ACTION</a>
+                        <a href="PIXAR/Woody-Interactive.HTML">WOODY-INTERACTIVE</a>
+                        <a href="PIXAR/WOODYROBO.HTML">WOODY-ROBO</a>
+                        <a href="PIXAR/Zurg-Talking.HTML">ZURG-TALKING</a>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-list">
+                <div id="features" style="cursor: pointer;">FEATURES</div>
+                <div class="links" style="background-color: #ab2cff;" id="feature-items">
+                    <a href="ABOUT-US.HTML">About Us</a>
+                    <!-- <a href="">Blog</a>
+                    <a href="">Events</a>
+                    <a href="">More Search</a>
+                    <a href="">Testimonials</a>
+                    <a href="">Services</a>
+                    <a href="">Supports</a> -->
+                    <a href="VOUCHER.HTML">Vouchers</a>
+                    <a href="PRIVACY.HTML">Privacy Policy</a>
+                    <a href="TERMS.HTML">Terms & Condition</a>
+                </div>
+            </div>
+            <div class="nav-list">
+                <a href="CONTACT-US.HTML">CONTACT</a>
+            </div>
+            <div class="nav-list">
+                <a href="COMPARE.HTML">COMPARE</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="arrow">
+        <a href="#head">
+            <img src="ICONS/ARROW.png" alt="ARROW-UP" width="30px" style="position: relative;top: -2px;" onclick="go()">
+        </a>
+    </div>
+
+    <audio id="myAudio">
+        <source src="IMAGES/GIF/sound.wav" type="audio/ogg">
+    </audio>
+
+    <div class="row">
+        <div class="col-4 responsive-map">
+            <div id="embedMap">
+                <!--Google map will be embedded here-->
+            </div>
+        </div>
+        <div class="col-8" style="padding: 0px 30px;">
+            <h2><b><u class="orange" style="font-size: 50px;">CONTACT US</u></b></h2>
+            <div class="orange" style="font-size: 30px;margin: 40px 0px 10px 0px;">
+                CONTACT INFO
+            </div>
+            <div style="font-size: 17px;margin: 10px 0px;">
+                If you have any questions, just send us and email and don’t forget to follow and like all our social
+                accounts to keep updated!
+            </div>
+            <div style="font-size: 12px;" class="orange mt-3">GENERAL INQUIRIES</div>
+            <div class="email-links"><a href="https://mail.google.com/mail/u/0/">INQUIRIES<strong
+                        style="color: lawngreen;">@</strong>TOYO-TOY-S89.COM</a></div>
+            <div class="display mb-3">
+                <div><a href="https://www.facebook.com/"><img src="IMAGES/PNG/FACEBOOK.png" alt="FACEBOOK"
+                            class="shake"></a></div>
+                <div><a href="https://www.instagram.com/?hl=en"><img src="IMAGES/PNG/INSTAGRAM.png" alt="INSTAGRAM"
+                            class="shake"></a>
+                </div>
+                <div><a href="https://twitter.com/home?lang=en"><img src="IMAGES/PNG/TWITTER.png" alt="TWITTER"
+                            class="shake"></a>
+                </div>
+                <div><a href="https://www.linkedin.com/signup"><img src="IMAGES/PNG/LINKEDIN.png" alt="LINKEDIN"
+                            class="shake"></a>
+                </div>
+            </div>
+            <h2><b><u class="orange" style="font-size: 30px;">JOIN OUR TEAM</u></b></h2>
+            <div style="font-size: 17px;margin: 10px 0px;">We’re always looking for new talent to join our teams. If you
+                wanna join us, just send us
+                and email and
+                we’ll get back to you!</div>
+            <div style="font-size: 12px;" class="orange mt-3">MAX PARKER - RECRUITER</div>
+            <div class="email-links"><a href="https://mail.google.com/mail/u/0/">MP-RECRUIT<strong
+                        style="color: lawngreen;">@</strong>TOYO-TOYS-43.COM</a></div>
+            <div style="font-size: 12px;" class="orange mt-3">BE OUR PARTNER!</div>
+            <div class="email-links"><a href="https://mail.google.com/mail/u/0/">PARTNERS<strong
+                        style="color: lawngreen;">@</strong>TOYO-TOYS-09.COM</a></div>
+            <div class="mt-4 text-center orange" style="font-size: 22px;"><u>SEND US A MESSAGE</u></div>
+            <div class="row">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-10" id="form">
+                    <form action="THANKS.HTML" id="form" class="text-center">
+                        <div style="display: flex;justify-content: space-around;">
+                            <div>
+                                <input type="text" id="name" placeholder="Your Name" required
+                                    pattern="^[a-zA-Z' ']{3,}$" class="form-control">
+                            </div>
+                            <div>
+                                <input type="email" id="mail" placeholder="Your Email" required
+                                    pattern="^[\w._]{1,}(@)[a-zA-Z]{1,}(.com)$" class="form-control">
+                            </div>
+                        </div>
+                        <div>
+                            <textarea name="" id="message" cols="50" rows="7" placeholder="Your Message" required
+                                class="form-control"></textarea>
+                        </div>
+                        <div>
+                            <input type="submit" value="SEND MESSAGE" style="color: white;">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="background-image: linear-gradient(to right, #845094, #700092);color: #ffa500;">
+        <hr class="mt-5 mb-5" style="margin: auto;position: relative;left: -20px;width: 50%;">
+
+        <h1 class="text-center"
+            style="font-family: Arial, Helvetica, sans-serif;font-size: 50px;text-shadow: 2px 2px white;">STAY HOME STAY
+            SAFE
+        </h1>
+
+        <hr class="mt-5 mb-5" style="margin: auto;transform: rotate(180deg);position: relative;left: -20px;width: 50%;">
+    </div>
+
+    <div class="row" id="footer">
+        <div class="col-lg-12" id="d-wrapper2" style="transform: rotate(180deg);position: relative;top: 30px;">
+            <div class="zig-zag-bottom2">
+                <div style="transform: rotate(180deg);">
+                    <h1>TOYO TOYS</h1>
+                    <div class="pt-5 pb-3 text-center">
+                        <img src="ICONS/location.png" alt="location" title="location" width="30px"
+                            style="filter: invert(100%);">
+                        <span>San Francisco, CA 94102, US 1234</span>
+                    </div>
+                    <div class="pb-3 text-center">
+                        <img src="ICONS/clock.png" alt="clock" title="clock" width="30px" style="filter: invert(100%);">
+                        <span>Monday - Friday: 7:30 am - 17:00 pm, Saturday: 8:00 am - 15:00 pm</span>
+                    </div>
+                    <div class="pb-5 text-center">
+                        <img src="ICONS/mobile.png" alt="mobile" title="mobile" width="30px"
+                            style="filter: invert(100%);">
+                        <span>+92 322 924 3965;+92 321 567 5678</span>
+                    </div>
+                    <div class="flex pb-5 text-center img-socialMedia">
+                        <a href="https://www.facebook.com/" target="_blank"><img src="ICONS/FACEBOOK.png" alt="FACEBOOK"
+                                width="30px" title="FACEBOOK"></a>
+                        <a href="https://twitter.com/home?lang=en" target="_blank"><img src="ICONS/TWITTER.png"
+                                alt="TWITTER" width="30px" title="TWITTER"></a>
+                        <a href="https://www.instagram.com/" target="_blank"><img src="ICONS/INSTAGRAM.png"
+                                alt="INSTAGRAM" width="40px" style="border: 2px solid black;border-radius: 50%;"
+                                title="INSTAGRAM"></a>
+                        <a href="https://www.linkedin.com/signup" target="_blank"><img src="ICONS/LINKEDIN.png"
+                                alt="LINKEDIN" width="30px" title="LINKEDIN"></a>
+                        <a href="https://www.youtube.com/" target="_blank"><img src="ICONS/YOUTUBE.png" alt="YOUTUBE"
+                                width="30px" title="YOUTUBE"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        update();
+        function showPosition() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showMap);
+            } else {
+                alert("Sorry, your browser does not support HTML5 geolocation.");
+            }
+        }
+        // Define callback function for successful attempt
+        function showMap(position) {
+            // Get location data
+            lat = 24.9273;
+            long = 67.0331;
+            var latlong = new google.maps.LatLng(lat, long);
+            var myOptions = {
+                center: latlong,
+                zoom: 16,
+            }
+            var image = 'logo.jpg';
+            var map = new google.maps.Map(document.getElementById("embedMap"), myOptions);
+            var marker = new google.maps.Marker({ position: latlong, icon: image, map: map, title: "Aptech North Nazimabad" });
+        }
+        // Define callback function for failed attempt
+        //MUSIC
+        function playAudio() {
+            document.getElementById("myAudio").play();
+        }
+        function pauseAudio() {
+            document.getElementById("myAudio").pause();
+        }
+        // slider start
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            slidesPerGroup: 1,
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                },
+                991: {
+                    slidesPerView: 3,
+                },
+            },
+            loop: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            }
+        });
+        // slider end
+    </script>
+</body>
+
+</html>

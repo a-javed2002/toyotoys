@@ -1,0 +1,445 @@
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap");
+/*detail of images on separate pages css*/
+.container {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-areas:
+    "section section section aside aside"
+    "footer footer footer aside aside";
+}
+
+#section {
+  grid-area: section;
+  width: 900px;
+  height: 600px;
+  border: 8px solid #6d0077;
+  /* border: 4px solid orange; */
+  /* background: url("card-1.jpg") no-repeat center center/cover; */
+}
+
+#aside {
+  grid-area: aside;
+  text-align: center;
+  color: #000000;
+}
+#aside h1 {
+  color: #ffa500;
+  font-family: cursive;
+  font-weight: bolder;
+  text-decoration: underline;
+  text-shadow: 2px 2px rgb(0, 0, 0);
+}
+
+#section2 {
+  grid-area: footer;
+  height: 126px;
+  background-color: #ffffff;
+  grid-area: footer;
+  /* border: 4px solid green; */
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  border: 8px solid #6d0077;
+}
+
+#section2 img {
+  cursor: pointer;
+  width: 130px;
+  height: 110px;
+}
+
+ul li {
+  padding: 12px;
+  text-align: left;
+}
+
+.magnify {
+  border-radius: 50%;
+  border: 2px solid black;
+  position: absolute;
+  z-index: 20;
+  background-repeat: no-repeat;
+  background-color: white;
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5);
+  display: none;
+  cursor: none;
+}
+
+.img-border {
+  border: 5px solid #ffa500;
+}
+
+section img,#section2{
+  box-shadow:  none !important;
+}
+
+/*SHAKING IMAGES*/
+.shake:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+    /* background-color: #ffa500; */
+    /* border: 20px solid #ffa500; */
+    /*baykaar*/
+  }
+
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+/*RATING*/
+.slider {
+  -webkit-appearance: none;
+  width: 50%;
+  height: 15px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 185px;
+  height: 15px;
+  background: #ffd000;
+  cursor: pointer;
+}
+
+.slider2::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 15px;
+  background: #ffd000;
+  cursor: pointer;
+}
+
+.slider3::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 5px;
+  height: 15px;
+  background: #ffd000;
+  cursor: pointer;
+}
+
+.slider4::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 0px;
+  height: 15px;
+  background: #ffd000;
+  cursor: pointer;
+}
+
+.slider5::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 2px;
+  height: 15px;
+  background: #ffd000;
+  cursor: pointer;
+}
+
+/* card */
+.card {
+  font-family: "Raleway", Arial, sans-serif;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 10px 2.55% 40px 2%;
+  min-width: 220px;
+  max-width: 310px;
+  width: 100%;
+  color: #333333;
+  text-align: center;
+  background-color: #ffffff;
+  line-height: 1.6em;
+  border-radius: 15%;
+}
+
+.card * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+
+.card .image {
+  position: relative;
+}
+
+.card img {
+  /* max-width: 100%; */
+  width: 300px;
+  height: 300px;
+  vertical-align: top;
+  -webkit-transition: opacity 0.35s;
+  transition: opacity 0.35s;
+}
+
+.card .icons,
+.card .add-to-cart {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  opacity: 0;
+}
+
+.card .icons {
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+  top: 20px;
+  /* display: flex;
+    justify-content: space-between; */
+}
+
+.card .icons a {
+  padding: 12px 65px;
+  text-decoration: none;
+  width: 32.5%;
+  background: #ffffff;
+}
+
+.card .icons a:hover {
+  background: #000000;
+}
+
+.card .icons a:hover i {
+  color: #ffffff;
+  opacity: 1;
+}
+
+.card .icons i {
+  line-height: 46px;
+  font-size: 20px;
+  color: #000000;
+  text-align: center;
+  opacity: 0.7;
+  margin: 0;
+}
+
+.card .add-to-cart {
+  position: absolute;
+  bottom: 55px;
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+  font-size: 0.8em;
+  color: #000000;
+  line-height: 46px;
+  letter-spacing: 1.5px;
+  background-color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.card .add-to-cart:hover {
+  background: #000000;
+  color: #ffffff;
+}
+
+.card figcaption {
+  padding: 20px 20px 30px;
+}
+
+.card h2,
+.card p {
+  margin: 0;
+  text-align: left;
+}
+
+.card h2 {
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.card p {
+  margin-bottom: 15px;
+  font-size: 0.85em;
+  font-weight: 500;
+}
+
+.card .price {
+  font-size: 1.3em;
+  opacity: 0.5;
+  font-weight: 700;
+}
+
+.card:hover img,
+.card.hover img {
+  opacity: 0.8;
+}
+
+.card:hover .icons,
+.card.hover .icons,
+.card:hover .add-to-cart,
+.card.hover .add-to-cart {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  opacity: 1;
+}
+#similar {
+  font-size: 50px;
+  text-decoration: underline;
+  font-family: cursive;
+  font-weight: bolder;
+  color: #ffa500;
+  text-shadow: 2px 2px #000000;
+}
+/* BUTTONS */
+#btn-1,
+#btn-2,
+#btn-3 {
+  font-size: 20px;
+  font-family: "Londrina Solid", cursive;
+  margin: 0px 5px;
+  background-color: #ffa500;
+  color: white;
+  text-shadow: 2px 2px black;
+}
+#btn-1:hover,
+#btn-2:hover,
+#btn-3:hover {
+  background-color: #cd853f;
+}
+.reviews {
+  background-color: #d6d6d6;
+  border: 8px solid gray;
+}
+.reviews h5 {
+  font-size: 40px;
+  font-family: "Londrina Solid", cursive;
+  text-decoration: underline;
+  text-align: center;
+}
+#remove_2,
+#remove_3 {
+  display: none;
+}
+#remove_1,
+#remove_2,
+table,
+tr {
+  color: #000000;
+}
+.card {
+  width: 300px;
+  height: 300px;
+  margin-left: 27px;
+}
+
+#buy_now_bill {
+  background-color: #530053;
+  color: #ffffff;
+  width: 1235px;
+  height: 800px;
+  font-size: 30px;
+  position: absolute;
+  top: 0px;
+  display: none;
+  z-index: 40;
+  margin: 0px 0px 0px 150px;
+  text-decoration: none;
+}
+
+#buy_now_bill::after {
+  /* opacity: 1; */
+  z-index: 40;
+}
+
+#bill-img img {
+  border: 8px solid #7e407e;
+  border-radius: 20px;
+}
+
+#pro-name {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 60px;
+}
+
+.detail {
+  position: relative;
+  top: -300px;
+  left: 400px;
+  text-decoration: none !important;
+}
+
+.detail>div {
+  padding-bottom: 35px;
+}
+
+.detail span{
+  text-decoration: none;
+}
+
+#quantity {
+  width: 200px;
+  text-align: center;
+}
+
+a {
+  cursor: pointer;
+}
+
+form input {
+  width: 40%;
+  border-radius: 30px;
+  margin: 15px 0px;
+}
+
+#counter {
+  font-size: 20px;
+}
+#relate{
+  background-image: linear-gradient(to right, #845094, #700092);
+  font-weight: bolder;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#relate span{
+  text-shadow: 2px 2px white;
+}
+#buy-btn{
+  background-color: #00ccff;
+  padding: 7px 30px;
+}

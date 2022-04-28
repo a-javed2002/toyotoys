@@ -1,0 +1,2556 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>ALL BRANDS</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.0.2 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/product.css">
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/R-PRODUCT.CSS">
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="JS/IMAGES.JS"></script>
+    <script src="JS/MAIN.JS"></script>
+    <script src="JS/CART.JS"></script>
+</head>
+<style>
+    .detail {
+        font-size: 30px;
+        text-decoration: underline;
+    }
+
+    .more a {
+        list-style: none;
+        float: right;
+        font-size: 20px;
+    }
+
+    #heading1 {
+        text-align: center;
+        color: #6e1414;
+        margin: 10px 0px;
+        text-decoration: underline;
+        text-shadow: 4px 4px black;
+        font-size: 80px;
+        font-weight: bolder;
+        font-family: monospace;
+    }
+
+    #heading2 {
+        text-align: center;
+        color: #6e1414;
+        margin: 10px 0px;
+        text-decoration: underline;
+        text-shadow: 4px 4px black;
+        font-size: 80px;
+        font-weight: bolder;
+        font-family: monospace;
+    }
+
+    /* hr {
+        border: 7px solid black;
+    } */
+
+    /* body {
+        background-image: linear-gradient(to right, #c0a1a1, #7a1616);
+    } */
+
+    .card_detail {
+        background-image: linear-gradient(to right, #c0a1a1, #7a1616);
+        box-shadow: -4px -4px 5px 5px #6e1414, 4px 4px 5px 5px #6e1414;
+        text-align: center;
+        width: 300px;
+    }
+
+    .flip-card-front img,
+    .flip-card-back img,
+    .flip-box-front img,
+    .flip-box-back img {
+        box-shadow: -4px -4px 5px 5px #6e1414, 4px 4px 5px 5px #6e1414;
+    }
+
+    #loader {
+        display: none;
+        opacity: 0.6;
+    }
+
+    .card {
+        width: 300px;
+        height: 300px;
+        margin-left: 27px;
+    }
+
+    #footer {
+        width: 103%;
+    }
+
+    #showMore,
+    #showMore2 {
+        color: #00aec5;
+        cursor: pointer;
+    }
+
+</style>
+
+<body style="overflow-x: hidden;" onload="fresh()">
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <div class="row" id="head">
+        <div class="col-lg-1 col-md-1 col-sm-1"></div>
+        <div class="col-lg-1 col-md-1 col-sm-1"></div>
+        <div class="col-lg-4 col-md-4 col-sm-4"><img src="ICONS/location.png" title="LOCATION" alt="LOCATION"
+                width="30px" style="filter: invert(100%);">North Nazimabad, Block-A, A-245</div>
+        <div class="col-lg-3"><img src="ICONS/mobile.png" title="CONTACT" alt="MOBILE" width="30px"
+                style="filter: invert(100%);">+92 322 924 3965;+92 321 567 5678
+        </div>
+        <div class="col-lg-3 img-socialMedia">
+            <a href="https://www.facebook.com/" target="_blank"><img src="ICONS/FACEBOOK.png" alt="FACEBOOK"
+                    width="30px" title="FACEBOOK"></a>
+            <a href="https://twitter.com/home?lang=en" target="_blank"><img src="ICONS/TWITTER.png" alt="TWITTER"
+                    width="30px" title="TWITTER"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="ICONS/INSTAGRAM.png" alt="INSTAGRAM"
+                    width="40px" style="border: 2px solid black;border-radius: 50%;" title="INSTAGRAM"></a>
+            <a href="https://www.linkedin.com/signup" target="_blank"><img src="ICONS/LINKEDIN.png" alt="LINKEDIN"
+                    width="30px" title="LINKEDIN"></a>
+            <a href="https://www.youtube.com/" target="_blank"><img src="ICONS/YOUTUBE.png" alt="YOUTUBE" width="30px"
+                    title="YOUTUBE"></a>
+        </div>
+    </div>
+
+    <div class="row" id="disappear3">
+        <div class="col-12" id="d-wrapper">
+            <div class="zig-zag-bottom">
+                <div class="row" style="width: 100%;height: 40px;">
+                    <div class="col-lg-1">
+                        <a href="INDEX.HTML" id="toyo-toys">
+                            <img src="ICONS/logo.png" alt="kids" title="TOYO-TOYS">
+                        </a>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-3"></div>
+                    <div class="col-lg-5 flex mt-3" style="position: relative;left: -100px;">
+                        <div style="position: relative;left: 150px;">
+                            <div style="padding: 80px 5px 20px 5px;z-index: 5;position: relative;top: -25px;">
+                                <span style="position: relative;top: -40px;"><a href="INDEX.HTML" id="nav-item-4"
+                                        style="font-family: cursive;color: #00fff2;">HOME</a></span>
+                            </div>
+                        </div>
+                        <!-- <div id="nav-item-2" style="position: relative;top: 12px;"><a href="##">TIMETABLE</a></div> -->
+                        <!-- <div id="nav-item-2" style="position: relative;top: 12px;">ALL PRODUCTS</div> -->
+                        <div class="dropdown" style="position: relative;left: 12px">
+                            <a href="###" style="position: relative;top: 110px;left: 60px;"><span class="active"
+                                    style="padding: 90px 15px 20px 15px;z-index: 5;position: relative;top: -50px;background-color: #ffc400;"><span
+                                        style="position: relative;top: -48px;font-weight: bolder;font-family: cursive;">PRODUCTS</span></span></a>
+                            <div class="dropdown-content" style="background-color: #5f53ff;">
+                                <div class="row" style="margin-left: -20px;">
+                                    <div class="col-lg-12 text-center mt-3 mb-3">
+                                        <a href="BRAND.HTML"><span>
+                                                <h1>ALL BRANDS</h1>
+                                            </span></a>
+                                    </div>
+                                </div>
+                                <div class="row" style="margin-left: 140px;">
+                                    <div class="col-lg-2 mb-3" id="column-1">
+                                        <a href="MARVEL/INDEX.HTML" style="margin-top: 13px;"><span
+                                                class="heading">MARVEL</span></a>
+                                        <a href="MARVEL/BLACK-PANTHER.HTML">BLACK-PANTHER</a>
+                                        <a href="MARVEL/CAPTAIN-AMERICA.html">CAPTAIN AMERICA</a>
+                                        <a href="MARVEL/CAR.HTML">CAR</a>
+                                        <a href="MARVEL/DEADPOOL.HTML">DEADPOOL</a>
+                                        <a href="MARVEL/DR-STRANGE.HTML">DR-STRANGE</a>
+                                        <a href="MARVEL/GAUNTLET.HTML">GAUNTLET</a>
+                                        <a href="MARVEL/HULK-PLUSH.HTML">HULK PLUSH</a>
+                                        <a href="MARVEL/IRON-MAN.HTML">IRONMAN</a>
+                                        <a href="MARVEL/LEGOMARVELLOKI.HTML">LEGOS</a>
+                                        <a href="MARVEL/HULK.HTML">HULK</a>
+                                        <a href="MARVEL/NICK-FURY.HTML">NICK-FURY</a>
+                                        <a href="MARVEL/SHANG-CHI.html">SHANG-CHI</a>
+                                        <a href="MARVEL/SHIELD.HTML">SHIELD</a>
+                                        <a href="MARVEL/SPIDERMAN.HTML">SPIDERMAN</a>
+                                        <a href="MARVEL/THANOS.HTML">THANOS</a>
+                                        <a href="MARVEL/THEINFINITY.HTML">INFINITY</a>
+                                        <a href="MARVEL/THOR.HTML">THOR</a>
+                                        <a href="MARVEL/VENOM.HTML" style="margin-bottom: 13px;">VENOM</a>
+                                    </div>
+                                    <div class="col-lg-2" id="column-2">
+                                        <a href="BEN-10/INDEX.HTML" style="margin-top: 13px;"><span
+                                                class="heading">BEN10</span></a>
+                                        <a href="BEN-10/ARCHERY.HTML">ARCHERY</a>
+                                        <a href="BEN-10/CAR.HTML">CAR</a>
+                                        <a href="BEN-10/FEEDBACK.HTML">FEEDBACK</a>
+                                        <a href="BEN-10/GAME.HTML">BOARD GAME</a>
+                                        <a href="BEN-10/GUN-BUBBLE.HTML">BUBBLE GUN</a>
+                                        <a href="BEN-10/GUN-WATER.HTML">WATER GUN</a>
+                                        <a href="BEN-10/LEGO.HTML">LEGOS</a>
+                                        <a href="BEN-10/OMNITRIX.HTML">OMNITRIX</a>
+                                        <a href="BEN-10/PLANE.HTML">PLANE</a>
+                                        <a href="BEN-10/R-CAR.HTML">REMOTE CONTROL CAR</a>
+                                        <a href="BEN-10/SCOOTY.HTML">SCOOTY</a>
+                                        <a href="BEN-10/SKATEBOARD.HTML" style="margin-bottom: 13px;">SKATEBOARD</a>
+                                    </div>
+                                    <div class="col-lg-2" id="column-3">
+                                        <a href="DISNEP/INDEX.HTML" style="margin-top: 13px;"><span
+                                                class="heading">DISNEP</span></a>
+                                        <a href="DISNEP/Arendelle Castle.html">ARENDELLE</a>
+                                        <a href="DISNEP/Ariel Clamshell Bubble Wand.html">ARIEL CLAMSHELL</a>
+                                        <a href="DISNEP/Belle and Rapunzels Royal Stables.html">BELLE & RAPUNZEL</a>
+                                        <a href="DISNEP/Belle and the Beasts Castle.html">BELLE & CASTLE</a>
+                                        <a href="DISNEP/Bingo Plush.html">BINGO</a>
+                                        <a href="DISNEP/Bow and Arrow.html">BOW & ARROW</a>
+                                        <a href="DISNEP/Cinderella.html">CINDERELLA</a>
+                                        <a href="DISNEP/Daisy Duck Plush.html">DAISY DUCK</a>
+                                        <a href="DISNEP/Disney nuiMOs Outfit.html">NUIMOS</a>
+                                        <a href="DISNEP/Disney Parks Wishables Mystery Plush.html">PARK</a>
+                                        <a href="DISNEP/Donald Duck Plush.html">DONALD DUCK</a>
+                                        <a href="DISNEP/Dory Plush.html">DORY</a>
+                                        <a href="DISNEP/Jaguar Plush.html">JAGUAR</a>
+                                        <a href="DISNEP/LEGO Ariels Underwater Palace.html">LEGO</a>
+                                        <a href="DISNEP/Littles Belle Cottage.html">BELLE & COTTAGE</a>
+                                        <a href="DISNEP/Littles Jasmine.html">JASMINE</a>
+                                        <a href="DISNEP/Mickey Mouse Plush.html">MICKEY MOUSE</a>
+                                        <a href="DISNEP/Pluto Plush.HTML">PLUTO</a>
+                                        <a href="DISNEP/Princess Magical Tea.html">PRINCESS</a>
+                                        <a href="DISNEP/Rapunzel Tower.html">RAPUNZEL & TOWER</a>
+                                        <a href="DISNEP/Rolly Plush.html">ROLLY</a>
+                                        <a href="DISNEP/Simba Plush.html">SIMBA</a>
+                                        <a href="DISNEP/small world Board Game.html">BOARD GAME</a>
+                                        <a href="DISNEP/Snow White Disney Parks Wishables Plush.html">SNOW WHITE</a>
+                                        <a href="DISNEP/Sven Plush.html" style="margin-bottom: 13px;">SVEN</a>
+                                    </div>
+                                    <div class="col-lg-2" id="column-4">
+                                        <a href="PIXAR/INDEX.HTML" style="margin-top: 13px;"><span
+                                                class="heading">PIXAR</span></a>
+                                        <a href="PIXAR/Baby Shark.html">BABY SHARK</a>
+                                        <a href="PIXAR/BLACK-WIDOW.HTML">BLACK WIDOW</a>
+                                        <a href="PIXAR/BullseyeInteractive.HTML">BULLS EYE</a>
+                                        <a href="PIXAR/BuzzLightyear.HTML">BUZZ LIGHT</a>
+                                        <a href="PIXAR/COCO-DELUXE.HTML">COCO-DELUXE</a>
+                                        <a href="PIXAR/ETERNALS.HTML">ETERNALS</a>
+                                        <a href="PIXAR/FORKY-TALKING.HTML">FORKY</a>
+                                        <a href="PIXAR/ForkyPlush.HTML">FORKY-PLUSH</a>
+                                        <a href="PIXAR/Frog Bubble Camera.html">FROG</a>
+                                        <a href="PIXAR/GAMORA.HTML">GAMORA</a>
+                                        <a href="PIXAR/HAWKEYE.HTML">HAWNEYE</a>
+                                        <a href="PIXAR/Jessie-Interactive.HTML">JESSIE</a>
+                                        <a href="PIXAR/Jumbo Bubble Jar.html">JUMBO</a>
+                                        <a href="PIXAR/LEGO-DEVIANT.HTML">LEGO</a>
+                                        <a href="PIXAR/Luca-Figurine.HTML">LUCA</a>
+                                        <a href="PIXAR/MAKKARI.HTML">MAKKARI</a>
+                                        <a href="PIXAR/Merida Light-Up Wand.html">MERIDA</a>
+                                        <a href="PIXAR/MiguelHector.HTML">MIGUEL</a>
+                                        <a href="PIXAR/No Spill Big Bubble.html">BIG BUBBLE</a>
+                                        <a href="PIXAR/No Spill Bubble Machine.html">BUBBLE MACHINE</a>
+                                        <a href="PIXAR/No Spill.html">NO SPILL</a>
+                                        <a href="PIXAR/Puppy Bubble Maker.html">PUPPY BUBBLE</a>
+                                        <a href="PIXAR/Raya and the Last Dragon.html">RAYA</a>
+                                        <a href="PIXAR/RexTalking.HTML">REX</a>
+                                        <a href="PIXAR/Toy-Story-Alien.HTML">ALIEN</a>
+                                        <a href="PIXAR/ToyStoryChogattai.HTML">CHOGATTAI</a>
+                                        <a href="PIXAR/Toystoryfig.HTML">ACTION FIGURES</a>
+                                        <a href="PIXAR/UP-DELUXE.HTML">UP-DELUXE</a>
+                                        <a href="PIXAR/Woody-Action.HTML">WOODY-ACTION</a>
+                                        <a href="PIXAR/Woody-Interactive.HTML">WOODY-INTERACTIVE</a>
+                                        <a href="PIXAR/WOODYROBO.HTML">WOODY-ROBO</a>
+                                        <a href="PIXAR/Zurg-Talking.HTML" style="margin-bottom: 13px;">ZURG-TALKING</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <a href="###" style="position: relative;top: 110px;left: 20px;"><span
+                                    style="padding: 90px 5px 20px 5px;z-index: 5;position: relative;top: -50px;"><span
+                                        id="nav-item-3"
+                                        style="position: relative;top: -48px;font-weight: bolder;font-family: cursive;">FEATURES</span></span></a>
+                            <div class="dropdown-content-2" style="background-color: #5f53ff;">
+                                <div class="row imp-links" style="margin-left: -20px;">
+                                    <a href="ABOUT-US.HTML">About Us</a>
+                                    <a href="VOUCHER.HTML">Vouchers</a>
+                                    <a href="PRIVACY.HTML">Privacy Policy</a>
+                                    <a href="TERMS.HTML">Terms & Condition</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <a href=" ###">
+                                            <div id="nav-item-3"
+                                                style="position: relative;top: 12px;padding-left: 20px;font-family: cursive;">
+                                                FEATURES</div>
+                                        </a> -->
+                        <a href="CONTACT-US.HTML">
+                            <div id="nav-item-4" style="position: relative;top: 12px;font-family: cursive;">
+                                CONTACT</div>
+                        </a>
+                        <a href="COMPARE.HTML">
+                            <div id="nav-item-5" style="position: relative;top: 12px;font-family: cursive;">
+                                COMPARE</div>
+                        </a>
+                        <a href="CART.HTML">
+                            <div id="nav-item-6" style="position: relative;top: -20px;">
+                                <span id="counter">0</span><img src="ICONS/CART.png" alt="CART" title="CART"
+                                    class="shake">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" id="disappear1" style="background-color: #1b90e2;">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="row">
+                <div class="col-lg-12">
+                    <span id="logo"><img src="ICONS/logo.png" alt="abc" title="TOYO-TOYS"></span>
+                    <span id="new-nav-more">
+                        <img src="ICONS/MORE.png" alt="abc" id="more" title="MORE OPTIONS"
+                            style="float: right;margin: 10px 0px 5px 0px;cursor: pointer;">
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" id="disappear2">
+        <div class="col-lg-12 col-md-12 col-sm-12" id="nav-items">
+            <div>
+                <a href="CART.HTML">
+                    <img src="ICONS/CART.png" alt="abc" width="80px" title="CART" class="shake" id="nav-item-6"
+                        style="float: right;margin: 10px 0px 5px 0px;">
+                </a>
+            </div>
+            <div class="nav-list">
+                <a href="INDEX.HTML">HOME</a>
+            </div>
+            <div class="nav-list">
+                <div id="products" style="cursor: pointer;">PRODUCTS</div>
+                <div style="background-color: #269c57;margin: 10px;" id="product-items">
+                    <a href="../BRAND.HTML"><span style="padding: 20px 0px;">ALL BRANDS</span></a>
+                    <div id="brand_marvel" style="cursor: pointer;">MARVEL</div>
+                    <div id="marvel-items" class="links" style="background-color: #990000;margin: 10px 20px;">
+                        <a href="MARVEL/INDEX.HTML"><span class="heading">MARVEL</span></a>
+                        <a href="MARVEL/BLACK-PANTHER.HTML">BLACK-PANTHER</a>
+                        <a href="MARVEL/CAPTAIN-AMERICA.html">CAPTAIN AMERICA</a>
+                        <a href="MARVEL/CAR.HTML">CAR</a>
+                        <a href="MARVEL/DEADPOOL.HTML">DEADPOOL</a>
+                        <a href="MARVEL/DR-STRANGE.HTML">DR-STRANGE</a>
+                        <a href="MARVEL/GAUNTLET.HTML">GAUNTLET</a>
+                        <a href="MARVEL/HULK-PLUSH.HTML">HULK PLUSH</a>
+                        <a href="MARVEL/HULK.HTML">HULK</a>
+                        <a href="MARVEL/IRON-MAN.HTML">IRONMAN</a>
+                        <a href="MARVEL/LEGOMARVELLOKI.HTML">LEGOS</a>
+                        <a href="MARVEL/HULK.HTML">HULK</a>
+                        <a href="MARVEL/NICK-FURY.HTML">NICK-FURY</a>
+                        <a href="MARVEL/SHANG-CHI.html">SHANG-CHI</a>
+                        <a href="MARVEL/SHIELD.HTML">SHIELD</a>
+                        <a href="MARVEL/SPIDERMAN.HTML">SPIDERMAN</a>
+                        <a href="MARVEL/THANOS.HTML">THANOS</a>
+                        <a href="MARVEL/THEINFINITY.HTML">INFINITY</a>
+                        <a href="MARVEL/THOR.HTML">THOR</a>
+                        <a href="MARVEL/VENOM.HTML" style="margin-bottom: 13px;">VENOM</a>
+                    </div>
+                    <div id="brand_ben10" style="cursor: pointer;">BEN10</div>
+                    <div id="ben10-items" class="links" style="background-color: #1a9b00;margin: 10px 20px;">
+                        <a href="BEN-10/INDEX.HTML"><span class="heading">BEN10</span></a>
+                        <a href="BEN-10/ARCHERY.HTML">ARCHERY</a>
+                        <a href="BEN-10/CAR.HTML">CAR</a>
+                        <a href="BEN-10/FEEDBACK.HTML">FEEDBACK</a>
+                        <a href="BEN-10/GAME.HTML">BOARD GAME</a>
+                        <a href="BEN-10/GUN-BUBBLE.HTML">BUBBLE GUN</a>
+                        <a href="BEN-10/GUN-WATER.HTML">WATER GUN</a>
+                        <a href="BEN-10/LEGO.HTML">LEGOS</a>
+                        <a href="BEN-10/OMNITRIX.HTML">OMNITRIX</a>
+                        <a href="BEN-10/PLANE.HTML">PLANE</a>
+                        <a href="BEN-10/R-CAR.HTML">REMOTE CONTROL CAR</a>
+                        <a href="BEN-10/SCOOTY.HTML">SCOOTY</a>
+                        <a href="BEN-10/SKATEBOARD.HTML" style="margin-bottom: 13px;">SKATEBOARD</a>
+                    </div>
+                    <div id="brand_disney" style="cursor: pointer;">DISNEY</div>
+                    <div id="disney-items" class="links" style="background-color: #0088aa;margin: 10px 20px;">
+                        <a href="DISNEP/INDEX.HTML"><span class="heading">DISNEP</span></a>
+                        <a href="DISNEP/Arendelle Castle.html">ARENDELLE</a>
+                        <a href="DISNEP/Ariel Clamshell Bubble Wand.html">ARIEL CLAMSHELL</a>
+                        <a href="DISNEP/Belle and Rapunzels Royal Stables.html">BELLE & RAPUNZEL</a>
+                        <a href="DISNEP/Belle and the Beasts Castle.html">BELLE & CASTLE</a>
+                        <a href="DISNEP/Bingo Plush.html">BINGO</a>
+                        <a href="DISNEP/Bow and Arrow.html">BOW & ARROW</a>
+                        <a href="DISNEP/Cinderella.html">CINDERELLA</a>
+                        <a href="DISNEP/Daisy Duck Plush.html">DAISY DUCK</a>
+                        <a href="DISNEP/Disney nuiMOs Outfit.html">NUIMOS</a>
+                        <a href="DISNEP/Disney Parks Wishables Mystery Plush.html">PARK</a>
+                        <a href="DISNEP/Donald Duck Plush.html">DONALD DUCK</a>
+                        <a href="DISNEP/Dory Plush.html">DORY</a>
+                        <a href="DISNEP/Jaguar Plush.html">JAGUAR</a>
+                        <a href="DISNEP/LEGO Ariels Underwater Palace.html">LEGO</a>
+                        <a href="DISNEP/Littles Belle Cottage.html">BELLE & COTTAGE</a>
+                        <a href="DISNEP/Littles Jasmine.html">JASMINE</a>
+                        <a href="DISNEP/Mickey Mouse Plush.html">MICKEY MOUSE</a>
+                        <a href="DISNEP/Pluto Plush.HTML">PLUTO</a>
+                        <a href="DISNEP/Princess Magical Tea.html">PRINCESS</a>
+                        <a href="DISNEP/Rapunzel Tower.html">RAPUNZEL & TOWER</a>
+                        <a href="DISNEP/Rolly Plush.html">ROLLY</a>
+                        <a href="DISNEP/Simba Plush.html">SIMBA</a>
+                        <a href="DISNEP/small world Board Game.html">BOARD GAME</a>
+                        <a href="DISNEP/Snow White Disney Parks Wishables Plush.html">SNOW WHITE</a>
+                        <a href="DISNEP/Sven Plush.html">SVEN</a>
+                    </div>
+                    <div id="brand_pixar" style="cursor: pointer;">PIXAR</div>
+                    <div id="pixar-items" class="links" style="background-color: #be5600;margin: 10px 20px 20px 20px;">
+                        <a href="PIXAR/INDEX.HTML"><span class="heading">PIXAR</span></a>
+                        <a href="PIXAR/Baby Shark.html">BABY SHARK</a>
+                        <a href="PIXAR/BLACK-WIDOW.HTML">BLACK WIDOW</a>
+                        <a href="PIXAR/BullseyeInteractive.HTML">BULLS EYE</a>
+                        <a href="PIXAR/BuzzLightyear.HTML">BUZZ LIGHT</a>
+                        <a href="PIXAR/COCO-DELUXE.HTML">COCO-DELUXE</a>
+                        <a href="PIXAR/ETERNALS.HTML">ETERNALS</a>
+                        <a href="PIXAR/FORKY-TALKING.HTML">FORKY</a>
+                        <a href="PIXAR/ForkyPlush.HTML">FORKY-PLUSH</a>
+                        <a href="PIXAR/Frog Bubble Camera.html">FROG</a>
+                        <a href="PIXAR/GAMORA.HTML">GAMORA</a>
+                        <a href="PIXAR/HAWKEYE.HTML">HAWNEYE</a>
+                        <a href="PIXAR/Jessie-Interactive.HTML">JESSIE</a>
+                        <a href="PIXAR/Jumbo Bubble Jar.html">JUMBO</a>
+                        <a href="PIXAR/LEGO-DEVIANT.HTML">LEGO</a>
+                        <a href="PIXAR/Luca-Figurine.HTML">LUCA</a>
+                        <a href="PIXAR/MAKKARI.HTML">MAKKARI</a>
+                        <a href="PIXAR/Merida Light-Up Wand.html">MERIDA</a>
+                        <a href="PIXAR/MiguelHector.HTML">MIGUEL</a>
+                        <a href="PIXAR/No Spill Big Bubble.html">BIG BUBBLE</a>
+                        <a href="PIXAR/No Spill Bubble Machine.html">BUBBLE MACHINE</a>
+                        <a href="PIXAR/No Spill.html">NO SPILL</a>
+                        <a href="PIXAR/Puppy Bubble Maker.html">PUPPY BUBBLE</a>
+                        <a href="PIXAR/Raya and the Last Dragon.html">RAYA</a>
+                        <a href="PIXAR/RexTalking.HTML">REX</a>
+                        <a href="PIXAR/Toy-Story-Alien.HTML">ALIEN</a>
+                        <a href="PIXAR/ToyStoryChogattai.HTML">CHOGATTAI</a>
+                        <a href="PIXAR/Toystoryfig.HTML">ACTION FIGURES</a>
+                        <a href="PIXAR/UP-DELUXE.HTML">UP-DELUXE</a>
+                        <a href="PIXAR/Woody-Action.HTML">WOODY-ACTION</a>
+                        <a href="PIXAR/Woody-Interactive.HTML">WOODY-INTERACTIVE</a>
+                        <a href="PIXAR/WOODYROBO.HTML">WOODY-ROBO</a>
+                        <a href="PIXAR/Zurg-Talking.HTML">ZURG-TALKING</a>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-list">
+                <div id="features" style="cursor: pointer;">FEATURES</div>
+                <div class="links" style="background-color: #ab2cff;" id="feature-items">
+                    <a href="ABOUT-US.HTML">About Us</a>
+                    <a href="VOUCHER.HTML">Vouchers</a>
+                    <a href="PRIVACY.HTML">Privacy Policy</a>
+                    <a href="TERMS.HTML">Terms & Condition</a>
+                </div>
+            </div>
+            <div class="nav-list">
+                <a href="CONTACT-US.HTML">CONTACT</a>
+            </div>
+            <div class="nav-list">
+                <a href="COMPARE.HTML">COMPARE</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="arrow">
+        <a href="#head">
+            <img src="ICONS/ARROW.png" alt="ARROW-UP" width="30px" style="position: relative;top: -2px;" onclick="go()">
+        </a>
+    </div>
+
+    <div class="row" id="cartClick">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="preloader">
+                <div class="box">
+                    <div class="box__inner">
+                        <div class="box__back-flap"></div>
+                        <div class="box__right-flap"></div>
+                        <div class="box__front-flap"></div>
+                        <div class="box__left-flap"></div>
+                        <div class="box__front"></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box__inner">
+                        <div class="box__back-flap"></div>
+                        <div class="box__right-flap"></div>
+                        <div class="box__front-flap"></div>
+                        <div class="box__left-flap"></div>
+                        <div class="box__front"></div>
+                    </div>
+                </div>
+                <div class="line">
+                    <div class="line__inner"></div>
+                </div>
+                <div class="line">
+                    <div class="line__inner"></div>
+                </div>
+                <div class="line">
+                    <div class="line__inner"></div>
+                </div>
+                <div class="line">
+                    <div class="line__inner"></div>
+                </div>
+                <div class="line">
+                    <div class="line__inner"></div>
+                </div>
+                <div class="line">
+                    <div class="line__inner"></div>
+                </div>
+                <div class="line">
+                    <div class="line__inner"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <audio id="myAudio">
+        <source src="IMAGES/GIF/sound.wav" type="audio/ogg">
+    </audio>
+
+    <div class="row" id="buy_now_bill">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <p id="pro-name"></p>
+            <div>
+                <div id="bill-img">
+                    <!-- <img src="MARVEL/JPG/BAG1.jpg" alt="picture" width="200px" height="200px"> -->
+                </div>
+            </div>
+            <div class="detail">
+                <div>
+                    <span style="padding-right:100px;">QUANTITY:</span>
+                    <input type="number" id="quantity" value="1" min="1" max="5" onchange="vary()">
+                </div>
+                <div>
+                    <span>PRICE PER ITEM:$<span id="price"></span></span>
+                </div>
+                <div>
+                    <span>TOTAL:<span id="tprice"></span></span>
+                </div>
+                <div><button type="button" class="btn btn-danger" onclick="discard()">DISCARD</button></div>
+                <div id="cart-continue"></div>
+                <div style="position:relative;top:-200px;left:330px;">
+                    <form action="ORDER.HTML"
+                        style="display:flex;flex-direction: column;justify-content: space-around;">
+                        <input type="text" placeholder="Your Name" required pattern="^[a-zA-Z' ']{3,}$">
+                        <input type="email" placeholder="Your Email" required
+                            pattern="^[\w._]{1,}(@)[a-zA-Z]{1,}(.com)$">
+                        <input type="text" placeholder="Contact Number" required pattern="^[0-9' '+]{9,}$">
+                        <input type="text" placeholder="YOUR ADDRESS" required pattern="^[a-zA-Z' '0-9_-*&#]{10,}$">
+                        <input type="submit" value="PLACE ORDER" class="btn btn-success">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-5 mb-5">
+        <h1 id="heading1">EXCLUSIVE DEALS</h1>
+    </div>
+
+    <section>
+        <div class="rt-container" style="margin-top: 10px;;margin-bottom: -350px;">
+            <div class="col-lg-12 mt-5">
+                <div class="Scriptcontent">
+                    <!-- 3D Image Slideshow HTML -->
+                    <section class="slideshow">
+                        <div class="content">
+                            <div class="slider-content">
+                                <figure class="shadow"><a href="MARVEL/CAR.HTML"><img src="MARVEL/JPG/CAR1.jpg"></a>
+                                </figure>
+                                <figure class="shadow"><a href="BEN-10/ARCHERY.HTML"><img
+                                            src="BEN-10/JPG/ARCHERY3.jpg"></a></figure>
+                                <figure class="shadow"><a href="DISNEP/Bow and Arrow.html"><img
+                                            src="DISNEP/JPG/bow2.jpg"></a></figure>
+                                <figure class="shadow"><a href="PIXAR/Zurg-Talking.HTML"><img
+                                            src="PIXAR/JPG/z1.jpg"></a></figure>
+                                <figure class="shadow"><a href="MARVEL/GAUNTLET.HTML"><img
+                                            src="MARVEL/JPG/GAUNTLET1.jpg"></a></figure>
+                                <figure class="shadow"><a href="BEN-10/FEEDBACK.HTML"><img
+                                            src="BEN-10/JPG/FEEDBACK1.jpg"></a></figure>
+                                <figure class="shadow"><a href="DISNEP/Pluto Plush.HTML"><img
+                                            src="DISNEP/JPG/pluto1.jpg"></a></figure>
+                                <figure class="shadow"><a href="BEN-10/SCOOTY.HTML"><img
+                                            src="BEN-10/JPG/SCOOTY2.jpg"></a></figure>
+                                <figure class="shadow"><a href="PIXAR/RexTalking.HTML"><img src="PIXAR/JPG/ri1.jpg"></a>
+                                </figure>
+                                <figure class="shadow"><a href="MARVEL/VENOM.HTML"><img src="MARVEL/JPG/VENOM1.jpg"></a>
+                                </figure>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- End 3D Image Slideshow HTML -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="row mb-5" style="font-size: 30px;font-weight: bolder;font-family: Verdana, Geneva, Tahoma, sans-serif;">
+        <div class="col-1"></div>
+        <div class="col-2 mt-5">
+            <div class="dropdown-filter">
+                <span style="cursor: pointer;"><img src="IMAGES/GIF/filter.gif" alt="kk" width="40px">BY AGE</span>
+                <div class="dropdown-content-filter">
+                    <table id="filter-age">
+                        <tr>
+                            <td><label for="aGroup_1" style="padding: 5px 30px 3px 5px;">0-5 years</label></td>
+                            <td><input type="checkbox" name="aGroup_1" id="aBox_1" onclick="age()"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="aGroup_2" style="padding: 5px 30px 3px 5px;">5-10 years</label></td>
+                            <td><input type="checkbox" name="aGroup_2" id="aBox_2" onclick="age()"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="aGroup_3" style="padding: 5px 30px 3px 5px;">10+</label></td>
+                            <td><input type="checkbox" name="aGroup_3" id="aBox_3" onclick="age()"></td>
+                        </tr>
+                        <tr>
+                            <td><button type="button" class="btn" onclick="clearAge()"><img src="IMAGES/PNG/trash.png"
+                                        alt=""></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="showMore">See More</td>
+                        </tr>
+                        <tr id="hide-1">
+                            <td>FILTER BY AGE AND BRAND</td>
+                        </tr>
+                        <tr id="hide-2">
+                            <td>
+                                <select style="margin-top: 50px;" id="select" onclick="moreFilter()">
+                                    <option disabled selected>Select Brand</option>
+                                    <option value="1">MARVEL</option>
+                                    <option value="2">BEN-10</option>
+                                    <option value="3">PIXAR</option>
+                                    <option value="4">DISNEP</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 text-center" id="heading2">ALL PRODUCTS</div>
+        <div class="col-2 mt-5">
+            <div class="dropdown-filter">
+                <span style="cursor: pointer;"><img src="IMAGES/GIF/filter.gif" alt="kk" width="40px">BY BRAND</span>
+                <div class="dropdown-content-filter">
+                    <table id="filter-brand">
+                        <tr>
+                            <td><label for="bGroup_1" style="padding: 5px 100px 3px 5px;">MARVEL</label></td>
+                            <td><input type="checkbox" name="bGroup_1" id="bBox_1" onclick="brand(1)"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="bGroup_2" style="padding: 5px 30px 3px 5px;">BEN-10</label></td>
+                            <td><input type="checkbox" name="bGroup_2" id="bBox_2" onclick="brand(2)"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="bGroup_3" style="padding: 5px 30px 3px 5px;">DISNEP</label></td>
+                            <td><input type="checkbox" name="bGroup_3" id="bBox_3" onclick="brand(3)"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="bGroup_4" style="padding: 5px 30px 3px 5px;">PIXAR</label></td>
+                            <td><input type="checkbox" name="bGroup_4" id="bBox_4" onclick="brand(4)"></td>
+                        </tr>
+                        <tr>
+                            <td><button type="button" class="btn" onclick="clearBrand()"><img src="IMAGES/PNG/trash.png"
+                                        alt=""></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="showMore2">See More</td>
+                        </tr>
+                        <tr id="hide-3">
+                            <td>FILTER BY BRAND AND AGE</td>
+                        </tr>
+                        <tr id="hide-4">
+                            <td>
+                                <select style="margin-top: 50px;" id="select2" onclick="moreFilter2()">
+                                    <option disabled selected>Select Brand</option>
+                                    <option value="1">MARVEL</option>
+                                    <option value="2">BEN-10</option>
+                                    <option value="3">PIXAR</option>
+                                    <option value="4">DISNEP</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="col-1"></div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-6" id='marvel_1'>
+            <figure class="card">
+                <div class="image">
+                    <a href="MARVEL/BLACK-PANTHER.HTML">
+                        <img src="MARVEL/JPG/BLACK-PANTHER1.jpg" alt="TOY" />
+                    </a>
+                    <div class="icons">
+                        <a href="#head"><i class="ion-share"
+                                onclick='buy_now("BLACK PANTHER ACTION FIGURE","MARVEL/JPG/BLACK-PANTHER1.jpg",12.99,"MARVEL/BLACK-PANTHER.HTML")'>BUY
+                                NOW</i></a>
+                    </div>
+                    <a onclick='add_to_cart("BLACK-PANTHER","MARVEL/JPG/BLACK-PANTHER1.jpg", 12.99,"MARVEL/BLACK-PANTHER.HTML")'
+                        class="add-to-cart">Add
+                        to Cart</a>
+                </div>
+            </figure>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6" id='marvel_2'>
+            <figure class="card">
+                <div class="image">
+                    <a href="MARVEL/CAPTAIN-AMERICA.html">
+                        <img src="MARVEL/JPG/capt1.jpg" alt="TOY" />
+                    </a>
+                    <div class="icons">
+                        <a href="#head"><i class="ion-share"
+                                onclick='buy_now("CAPTAIN AMERICA ACTION FIGURE","MARVEL/JPG/capt1.jpg",20.50,"MARVEL/CAPTAIN-AMERICA.html")'>BUY
+                                NOW</i></a>
+                    </div>
+                    <a onclick='add_to_cart("CAPTAIN AMERICA ACTION FIGURE","MARVEL/JPG/capt1.jpg",20.50,"MARVEL/CAPTAIN-AMERICA.html")'
+                        class="add-to-cart">Add
+                        to Cart</a>
+                </div>
+            </figure>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6" id='marvel_3'>
+            <figure class="card">
+                <div class="image">
+                    <a href="MARVEL/CAR.HTML">
+                        <img src="MARVEL/JPG/CAR1.jpg" alt="TOY" />
+                    </a>
+                    <div class="icons">
+                        <a href="#head"><i class="ion-share"
+                                onclick='buy_now("MARVEL ACTION CAR","MARVEL/JPG/CAR1.jpg",14.99,"MARVEL/CAR.HTML")'>BUY
+                                NOW</i></a>
+                    </div>
+                    <a onclick='add_to_cart("MARVEL ACTION CAR","MARVEL/JPG/CAR1.jpg",14.99,"MARVEL/CAR.HTML")'
+                        class="add-to-cart">Add
+                        to Cart</a>
+                </div>
+            </figure>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6" id='marvel_4'>
+            <figure class="card">
+                <div class="image">
+                    <a href="MARVEL/DEADPOOL.HTML">
+                        <img src="MARVEL/JPG/DEADPOOL1.png" alt="TOY" />
+                    </a>
+                    <div class="icons">
+                        <a href="#head"><i class="ion-share"
+                                onclick='buy_now("DEADPOOL ACTION FIGURE","MARVEL/JPG/DEADPOOL1.png",19.82,"MARVEL/DEADPOOL.HTML")'>BUY
+                                NOW</i></a>
+                    </div>
+                    <a onclick='add_to_cart("DEADPOOL ACTION FIGURE","MARVEL/JPG/DEADPOOL1.png",19.82,"MARVEL/DEADPOOL.HTML")'
+                        class="add-to-cart">Add
+                        to Cart</a>
+                </div>
+            </figure>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-6" id='marvel_5'>
+            <figure class="card">
+                <div class="image">
+                    <a href="MARVEL/DR-STRANGE.HTML">
+                        <img src="MARVEL/JPG/DR-STRANGE1.jpg" alt="TOY" />
+                    </a>
+                    <div class="icons">
+                        <a href="#head"><i class="ion-share"
+                                onclick='buy_now("DR-STRANGE ACTION FIGURE","MARVEL/JPG/DR-STRANGE1.jpg",13.50,"MARVEL/DR-STRANGE.HTML")'>BUY
+                                NOW</i></a>
+                    </div>
+                    <a onclick='add_to_cart("DR-STRANGE ACTION FIGURE","MARVEL/JPG/DR-STRANGE1.jpg",13.50,"MARVEL/DR-STRANGE.HTML")'
+                        class="add-to-cart">Add
+                        to Cart</a>
+                </div>
+            </figure>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6" id='marvel_6'>
+            <figure class="card">
+                <div class="image">
+                    <a href="MARVEL/GAUNTLET.HTML">
+                        <img src="MARVEL/JPG/GAUNTLET1.jpg" alt="TOY" />
+                    </a>
+                    <div class="icons">
+                        <a href="#head"><i class="ion-share"
+                                onclick='buy_now("INFINITY GAUNTLET","MARVEL/JPG/GAUNTLET1.jpg",16.99,"MARVEL/GAUNTLET.HTML")'>BUY
+                                NOW</i></a>
+                    </div>
+                    <a onclick='add_to_cart("INFINITY GAUNTLET","MARVEL/JPG/GAUNTLET1.jpg",16.99,"MARVEL/GAUNTLET.HTML")'
+                        class="add-to-cart">Add
+                        to Cart</a>
+                </div>
+            </figure>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6" id='marvel_7'>
+            <figure class="card">
+                <div class="image">
+                    <a href="MARVEL/HULK-PLUSH.HTML">
+                        <img src="MARVEL/JPG/HULK-PLUSH1.jpg" alt="TOY" />
+                    </a>
+                    <div class="icons">
+                        <a href="#head"><i class="ion-share"
+                                onclick='buy_now("HULK PLUSH TOY","MARVEL/JPG/HULK-PLUSH1.jpg",45.90,"MARVEL/HULK-PLUSH.HTML")'>BUY
+                                NOW</i></a>
+                    </div>
+                    <a onclick='add_to_cart("HULK PLUSH TOY","MARVEL/JPG/HULK-PLUSH1.jpg",45.90,"MARVEL/HULK-PLUSH.HTML")'
+                        class="add-to-cart">Add
+                        to Cart</a>
+                </div>
+            </figure>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6" id='marvel_8'>
+            <figure class="card">
+                <div class="image">
+                    <a href="MARVEL/HULK.HTML">
+                        <img src="MARVEL/JPG/HULK1.jpg" alt="TOY" />
+                    </a>
+                    <div class="icons">
+                        <a href="#head"><i class="ion-share"
+                                onclick='buy_now("HULK ACTION FIGURE","MARVEL/JPG/HULK1.jpg",15.99,"MARVEL/HULK.HTML")'>BUY
+                                NOW</i></a>
+                    </div>
+                    <a onclick='add_to_cart("HULK ACTION FIGURE","MARVEL/JPG/HULK1.jpg",15.99,"MARVEL/HULK.HTML")'
+                        class="add-to-cart">Add
+                        to Cart</a>
+                </div>
+            </figure>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-6" id='marvel_9'>
+            <figure class="card">
+                <div class="image">
+                    <a href="MARVEL/IRON-MAN.HTML">
+                        <img src="MARVEL/JPG/ir1.jpg" alt="TOY" />
+                    </a>
+                    <div class="icons">
+                        <a href="#head"><i class="ion-share"
+                                onclick='buy_now("IRONMAN ACTION FIGURE","MARVEL/JPG/ir1.jpg",20.50,"MARVEL/IRON-MAN.HTML")'>BUY
+                                NOW</i></a>
+                    </div>
+                    <a onclick='add_to_cart("IRONMAN ACTION FIGURE","MARVEL/JPG/ir1.jpg",20.50,"MARVEL/IRON-MAN.HTML")'
+                        class="add-to-cart">Add
+                        to Cart</a>
+                </div>
+            </figure>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6" id='marvel_10'>
+            <figure class="card">
+                <div class="image">
+                    <a href="MARVEL/LEGOMARVELLOKI.HTML">
+                        <img src="MARVEL/JPG/lo1.jpg" alt="TOY" />
+                    </a>
+                    <div class="icons">
+                        <a href="#head"><i class="ion-share"
+                                onclick='buy_now("LEGOS","MARVEL/JPG/lo1.jpg",59.00,"MARVEL/LEGOMARVELLOKI.HTML")'>BUY
+                                NOW</i></a>
+                    </div>
+                    <a onclick='add_to_cart("LEGOS","MARVEL/JPG/lo1.jpg",59.00,"MARVEL/LEGOMARVELLOKI.HTML")'
+                        class="add-to-cart">Add
+                        to Cart</a>
+                </div>
+            </figure>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6" id='marvel_11'>
+            <figure class="card">
+                <div class="image">
+                    <a href="MARVEL/NICK-FURY.HTML">
+                        <img src="MARVEL/JPG/NICK-FURY1.jpg" alt="TOY" />
+                    </a>
+                    <div class="icons">
+                        <a href="#head"><i class="ion-share"
+                                onclick='buy_now("NICK-FURY ACTION FIGURE","MARVEL/JPG/NICK-FURY1.jpg",24.99,"MARVEL/NICK-FURY.HTML")'>BUY
+                                NOW</i></a>
+                    </div>
+                    <a onclick='add_to_cart("NICK-FURY ACTION FIGURE","MARVEL/JPG/NICK-FURY1.jpg",24.99,"MARVEL/NICK-FURY.HTML")'
+                        class="add-to-cart">Add
+                        to Cart</a>
+                </div>
+            </figure>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6" id='marvel_12'>
+            <figure class="card">
+                <div class="image">
+                    <a href="MARVEL/SHANG-CHI.html">
+                        <img src="MARVEL/JPG/Shang-Chi1.jpg" alt="TOY" />
+                    </a>
+                    <div class="icons">
+                        <a href="#head"><i class="ion-share"
+                                onclick='buy_now("SHANG-CHI ACTION FIGURE","MARVEL/JPG/Shang-Chi1.jpg",14.99,"MARVEL/SHANG-CHI.html")'>BUY
+                                NOW</i></a>
+                    </div>
+                    <a onclick='add_to_cart("SHANG-CHI ACTION FIGURE","MARVEL/JPG/Shang-Chi1.jpg",14.99,"MARVEL/SHANG-CHI.html")'
+                        class="add-to-cart">Add
+                        to Cart</a>
+                </div>
+            </figure>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-6" id='marvel_13'>
+            <figure class="card">
+                <div class="image">
+                    <a href="MARVEL/SHIELD.HTML">
+                        <img src="MARVEL/JPG/SHIELD3.jpg" alt="TOY" />
+                    </a>
+                    <div class="icons">
+                        <a href="#head"><i class="ion-share"
+                                onclick='buy_now("CPATAIN AMERICA SHIELD","MARVEL/JPG/SHIELD3.jpg",13.99,"MARVEL/SHIELD.HTML")'>BUY
+                                NOW</i></a>
+                    </div>
+                    <a onclick='add_to_cart("CPATAIN AMERICA SHIELD","MARVEL/JPG/SHIELD3.jpg",13.99,"MARVEL/SHIELD.HTML")'
+                        class="add-to-cart">Add
+                        to Cart</a>
+                </div>
+            </figure>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6" id='marvel_14'>
+            <figure class="card">
+                <div class="image">
+                    <a href="MARVEL/SPIDERMAN.HTML">
+                        <img src="MARVEL/JPG/SPIDERMAN1.jpg" alt="TOY" />
+                    </a>
+                    <div class="icons">
+                        <a href="#head"><i class="ion-share"
+                                onclick='buy_now("SPIDERMAN ACTION FIGURE","MARVEL/JPG/SPIDERMAN1.jpg",12.50,"MARVEL/SPIDERMAN.HTML")'>BUY
+                                NOW</i></a>
+                    </div>
+                    <a onclick='add_to_cart("SPIDERMAN ACTION FIGURE","MARVEL/JPG/SPIDERMAN1.jpg",12.50,"MARVEL/SPIDERMAN.HTML")'
+                        class="add-to-cart">Add
+                        to Cart</a>
+                </div>
+            </figure>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6" id='marvel_15'>
+            <figure class="card">
+                <div class="image">
+                    <a href="MARVEL/THANOS.HTML">
+                        <img src="MARVEL/JPG/THANOS1.jpg" alt="TOY" />
+                    </a>
+                    <div class="icons">
+                        <a href="#head"><i class="ion-share"
+                                onclick='buy_now("THANOS ACTION FIGURE","MARVEL/JPG/THANOS1.jpg",13.50,"MARVEL/THANOS.HTML")'>BUY
+                                NOW</i></a>
+                    </div>
+                    <a onclick='add_to_cart("THANOS ACTION FIGURE","MARVEL/JPG/THANOS1.jpg",13.50,"MARVEL/THANOS.HTML")'
+                        class="add-to-cart">Add
+                        to Cart</a>
+                </div>
+            </figure>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6" id='marvel_16'>
+            <figure class="card">
+                <div class="image">
+                    <a href="MARVEL/THEINFINITY.HTML">
+                        <img src="MARVEL/JPG/ti1.jpg" alt="TOY" />
+                    </a>
+                    <div class="icons">
+                        <a href="#head"><i class="ion-share"
+                                onclick='buy_now("MARVEL MEGA ACTION FIGURE SET","MARVEL/JPG/ti1.jpg",79.90,"MARVEL/THEINFINITY.HTML")'>BUY
+                                NOW</i></a>
+                    </div>
+                    <a onclick='add_to_cart("MARVEL MEGA ACTION FIGURE SET","MARVEL/JPG/ti1.jpg",79.90,"MARVEL/THEINFINITY.HTML")'
+                        class="add-to-cart">Add
+                        to Cart</a>
+                </div>
+            </figure>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-6" id='marvel_17'>
+            <figure class="card">
+                <div class="image">
+                    <a href="MARVEL/THOR.HTML">
+                        <img src="MARVEL/JPG/THOR1.jpg" alt="TOY" />
+                    </a>
+                    <div class="icons">
+                        <a href="#head"><i class="ion-share"
+                                onclick='buy_now("THOR ACTION FIGURE","MARVEL/JPG/THOR1.jpg",12.99,"MARVEL/THOR.HTML")'>BUY
+                                NOW</i></a>
+                    </div>
+                    <a onclick='add_to_cart("THOR ACTION FIGURE","MARVEL/JPG/THOR1.jpg",12.99,"MARVEL/THOR.HTML")'
+                        class="add-to-cart">Add
+                        to Cart</a>
+                </div>
+            </figure>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6" id='marvel_18'>
+            <figure class="card">
+                <div class="image">
+                    <a href="MARVEL/VENOM.HTML">
+                        <img src="MARVEL/JPG/VENOM1.jpg" alt="TOY" />
+                    </a>
+                    <div class="icons">
+                        <a href="#head"><i class="ion-share"
+                                onclick='buy_now("VENOM ACTION FIGURE","MARVEL/JPG/VENOM1.jpg",17.99,"MARVEL/VENOM.HTML")'>BUY
+                                NOW</i></a>
+                    </div>
+                    <a onclick='add_to_cart("VENOM ACTION FIGURE","MARVEL/JPG/VENOM1.jpg",17.99,"MARVEL/VENOM.HTML")'
+                        class="add-to-cart">Add
+                        to Cart</a>
+                </div>
+            </figure>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-6" id='pixar_1'>
+            <figure class="card">
+                <div class="image">
+                    <a href="PIXAR/Baby Shark.html">
+                        <img src="PIXAR/JPG/bshrk2.jpg" alt="baby-shark" />
+                    </a>
+                    <div class="icons">
+                        <a href="#head"><i class="ion-share"
+                                onclick='buy_now("BABY SHARK PLUSH TOY","PIXAR/JPG/bshrk2.jpg",45.90,"PIXAR/Baby Shark.html")'>BUY
+                                NOW</i></a>
+                    </div>
+                    <a onclick='add_to_cart("BABY SHARK PLUSH TOY","PIXAR/JPG/bshrk2.jpg",45.90,"PIXAR/Baby Shark.html")'
+                        class="add-to-cart">Add
+                        to Cart</a>
+                </div>
+            </figure>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6" id='pixar_2'>
+            <figure class="card">
+                <div class="image">
+                    <a href="PIXAR/BLACK-WIDOW.HTML">
+                        <img src="PIXAR/JPG/bw1.jpg" alt="black-widow" />
+                    </a>
+                    <div class="icons">
+                        <a href="#head"><i class="ion-share"
+                                onclick='buy_now("BLACK WIDOW ACTION FIGURE","PIXAR/JPG/bw1.jpg",20.50,"PIXAR/BLACK-WIDOW.HTML")'>BUY
+                                NOW</i></a>
+                    </div>
+                    <a onclick='add_to_cart("BLACK WIDOW ACTION FIGURE","PIXAR/JPG/bw1.jpg",20.50,"PIXAR/BLACK-WIDOW.HTML")'
+                        class="add-to-cart">Add
+                        to Cart</a>
+                </div>
+            </figure>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6" id='pixar_3'>
+            <figure class="card">
+                <div class="image">
+                    <a href="PIXAR/BullseyeInteractive.HTML">
+                        <img src="PIXAR/JPG/ey1.jpg" alt="TOY" />
+                    </a>
+                    <div class="icons">
+                        <a href="#head"><i class="ion-share"
+                                onclick='buy_now("BULLSEYE ACTION FIGURE","PIXAR/JPG/ey1.jpg",25.50,"PIXAR/BullseyeInteractive.HTML")'>BUY
+                                NOW</i></a>
+                    </div>
+                    <a onclick='add_to_cart("BULLSEYE ACTION FIGURE","PIXAR/JPG/ey1.jpg",25.50,"PIXAR/BullseyeInteractive.HTML")'
+                        class="add-to-cart">Add
+                        to Cart</a>
+                </div>
+            </figure>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6" id='pixar_4'>
+            <figure class="card">
+                <div class="image">
+                    <a href="PIXAR/BuzzLightyear.HTML">
+                        <img src="PIXAR/JPG/bu1.jpg" alt="TOY" />
+                    </a>
+                    <div class="icons">
+                        <a href="#head"><i class="ion-share"
+                                onclick='buy_now("BUZZ LIGHTYEAR ACTION FIGURE","PIXAR/JPG/bu1.jpg",55.50,"PIXAR/BuzzLightyear.HTML")'>BUY
+                                NOW</i></a>
+                    </div>
+                    <a onclick='add_to_cart("BUZZ LIGHTYEAR ACTION FIGURE","PIXAR/JPG/bu1.jpg",55.50,"PIXAR/BuzzLightyear.HTML")'
+                        class="add-to-cart">Add
+                        to Cart</a>
+                </div>
+            </figure>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-6" id='pixar_5'>
+            <figure class="card">
+                <div class="image">
+                    <a href="PIXAR/COCO-DELUXE.HTML">
+                        <img src="PIXAR/JPG/co1.jpg" alt="TOY" />
+                    </a>
+                    <div class="icons">
+                        <a href="#head"><i class="ion-share"
+                                onclick='buy_now("COCO DELUXE FIGURE","PIXAR/JPG/co1.jpg",45.50,"PIXAR/COCO-DELUXE.HTML")'>BUY
+                                NOW</i></a>
+                    </div>
+                    <a onclick='add_to_cart("COCO DELUXE FIGURE","PIXAR/JPG/co1.jpg",45.50,"PIXAR/COCO-DELUXE.HTML")'
+                        class="add-to-cart">Add
+                        to Cart</a>
+                </div>
+            </figure>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6" id='pixar_6'>
+            <figure class="card">
+                <div class="image">
+                    <a href="PIXAR/ETERNALS.HTML">
+                        <img src="PIXAR/JPG/et1.jpg" alt="TOY" />
+                    </a>
+                    <div class="icons">
+                        <a href="#head"><i class="ion-share"
+                                onclick='buy_now("ETERNAL DELUXE FIGURE PLAY SET","PIXAR/JPG/et1.jpg",50.00,"PIXAR/ETERNALS.HTML")'>BUY
+                                NOW</i></a>
+                    </div>
+                    <a onclick='add_to_cart("ETERNAL DELUXE FIGURE PLAY SET","PIXAR/JPG/et1.jpg",50.00,"PIXAR/ETERNALS.HTML")'
+                        class="add-to-cart">Add
+                        to Cart</a>
+                </div>
+            </figure>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6" id='pixar_7'>
+            <figure class="card">
+                <div class="image">
+                    <a href="PIXAR/FORKY-TALKING.HTML">
+                        <img src="PIXAR/JPG/ft1.jpg" alt="TOY" />
+                    </a>
+                    <div class="icons">
+                        <a href="#head"><i class="ion-share"
+                                onclick='buy_now("FORKY TALKING ACTION FIGURE","PIXAR/JPG/ft1.jpg",25.50,"PIXAR/FORKY-TALKING.HTML")'>BUY
+                                NOW</i></a>
+                    </div>
+                    <a onclick='add_to_cart("FORKY TALKING ACTION FIGURE","PIXAR/JPG/ft1.jpg",25.50,"PIXAR/FORKY-TALKING.HTML")'
+                        class="add-to-cart">Add
+                        to Cart</a>
+                </div>
+            </figure>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6" id='pixar_8'>
+            <figure class="card">
+                <div class="image">
+                    <a href="PIXAR/ForkyPlush.HTML">
+                        <img src="PIXAR/JPG/f1.jpg" alt="TOY" />
+                    </a>
+                    <div class="icons">
+                        <a href="#head"><i class="ion-share"
+                                onclick='buy_now("FORKY PLUSH","PIXAR/JPG/f1.jpg",25.50,"PIXAR/ForkyPlush.HTML")'>BUY
+                                NOW</i></a>
+                    </div>
+                    <a onclick='add_to_cart("FORKY PLUSH","PIXAR/JPG/f1.jpg",25.50,"PIXAR/ForkyPlush.HTML")'
+                        class="add-to-cart">Add
+                        to Cart</a>
+                </div>
+            </figure>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-6" id='pixar_9'>
+            <figure class="card">
+                <div class="image">
+                    <a href="PIXAR/Frog Bubble Camera.html">
+                        <img src="PIXAR/JPG/frog1.jpg" alt="TOY" />
+                    </a>
+                    <div class="icons">
+                        <a href="#head"><i class="ion-share"
+                                onclick='buy_now("FROG BUBBLE CAMERA","PIXAR/JPG/frog1.jpg",45.99,"PIXAR/Frog Bubble Camera.html")'>BUY
+                                NOW</i></a>
+                    </div>
+                    <a onclick='add_to_cart("FROG BUBBLE CAMERA","PIXAR/JPG/frog1.jpg",45.99,"PIXAR/Frog Bubble Camera.html")'
+                        class="add-to-cart">Add
+                        to Cart</a>
+                </div>
+            </figure>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6" id='pixar_10'>
+            <figure class="card">
+                <div class="image">
+                    <a href="PIXAR/GAMORA.HTML">
+                        <img src="PIXAR/JPG/ga1.jpg" alt="TOY" />
+                    </a>
+                    <div class="icons">
+                        <a href="#head"><i class="ion-share"
+                                onclick='buy_now("GAMORA COSBABY ACTION FIGURE","PIXAR/JPG/ga1.jpg",25.50,"PIXAR/GAMORA.HTML")'>BUY
+                                NOW</i></a>
+                    </div>
+                    <a onclick='add_to_cart("GAMORA COSBABY ACTION FIGURE","PIXAR/JPG/ga1.jpg",25.50,"PIXAR/GAMORA.HTML")'
+                        class="add-to-cart">Add
+                        to Cart</a>
+                </div>
+            </figure>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6" id='pixar_11'>
+            <figure class="card">
+                <div class="image">
+                    <a href="PIXAR/Jessie-Interactive.HTML">
+                        <img src="PIXAR/JPG/j1.jpg" alt="TOY" />
+                    </a>
+                    <div class="icons">
+                        <a href="#head"><i class="ion-share"
+                                onclick='buy_now("JESSIE INTERACTIVE TALKING ACTION FIGURE","PIXAR/JPG/j1.jpg",35.50,"PIXAR/Jessie-Interactive.HTML")'>BUY
+                                NOW</i></a>
+                    </div>
+                    <a onclick='add_to_cart("JESSIE INTERACTIVE TALKING ACTION FIGURE","PIXAR/JPG/j1.jpg",35.50,"PIXAR/Jessie-Interactive.HTML")'
+                        class="add-to-cart">Add
+                        to Cart</a>
+                </div>
+            </figure>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6" id='pixar_12'>
+            <figure class="card">
+                <div class="image">
+                    <a href="PIXAR/Jumbo Bubble Jar.html">
+                        <img src="PIXAR/JPG/jmbo1.jpg" alt="TOY" />
+                    </a>
+                    <div class="icons">
+                        <a href="#head"><i class="ion-share"
+                                onclick='buy_now("JUMBO BUBBLE JAR","PIXAR/JPG/jmbo1.jpg",45.90,"PIXAR/Jumbo Bubble Jar.html")'>BUY
+                                NOW</i></a>
+                    </div>
+                    <a onclick='add_to_cart("JUMBO BUBBLE JAR","PIXAR/JPG/jmbo1.jpg",45.90,"PIXAR/Jumbo Bubble Jar.html")'
+                        class="add-to-cart">Add
+                        to Cart</a>
+                </div>
+            </figure>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-6" id='pixar_13'>
+            <figure class="card">
+                <div class="image">
+                    <a href="PIXAR/LEGO-DEVIANT.HTML">
+                        <img src="PIXAR/JPG/l1.jpg" alt="TOY" />
+                    </a>
+                    <div class="icons">
+                        <a href="#head"><i class="ion-share"
+                                onclick='buy_now("LEGO DEVIANT AMBUSH","PIXAR/JPG/l1.jpg",25.50,"PIXAR/LEGO-DEVIANT.HTML")'>BUY
+                                NOW</i></a>
+                    </div>
+                    <a onclick='add_to_cart("LEGO DEVIANT AMBUSH","PIXAR/JPG/l1.jpg",25.50,"PIXAR/LEGO-DEVIANT.HTML")'
+                        class="add-to-cart">Add
+                        to Cart</a>
+                </div>
+            </figure>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6" id='pixar_14'>
+            <figure class="card">
+                <div class="image">
+                    <a href="PIXAR/Luca-Figurine.HTML">
+                        <img src="PIXAR/JPG/lu1.jpg" alt="TOY" />
+                    </a>
+                    <div class="icons">
+                        <a href="#head"><i class="ion-share"
+                                onclick='buy_now("LUCA FIGURINE PLAY SET","PIXAR/JPG/lu1.jpg",25.50,"PIXAR/Luca-Figurine.HTML")'>BUY
+                                NOW</i></a>
+                    </div>
+                    <a onclick='add_to_cart("LUCA FIGURINE PLAY SET","PIXAR/JPG/lu1.jpg",25.50,"PIXAR/Luca-Figurine.HTML")'
+                        class="add-to-cart">Add
+                        to Cart</a>
+                </div>
+            </figure>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6" id='pixar_15'>
+            <figure class="card">
+                <div class="image">
+                    <a href="PIXAR/MAKKARI.HTML">
+                        <img src="PIXAR/JPG/MAKKARI1.jpg" alt="TOY" />
+                    </a>
+                    <div class="icons">
+                        <a href="#head"><i class="ion-share"
+                                onclick='buy_now("MAKKARI ACTION FIGURE","PIXAR/JPG/MAKKARI1.jpg",4.50,"PIXAR/MAKKARI.HTML")'>BUY
+                                NOW</i></a>
+                    </div>
+                    <a onclick='add_to_cart("MAKKARI ACTION FIGURE","PIXAR/JPG/MAKKARI1.jpg",4.50,"PIXAR/MAKKARI.HTML")'
+                        class="add-to-cart">Add
+                        to Cart</a>
+                </div>
+            </figure>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6" id='pixar_16'>
+            <figure class="card">
+                <div class="image">
+                    <a href="PIXAR/Merida Light-Up Wand.html">
+                        <img src="PIXAR/JPG/mrida1.jpg" alt="TOY" />
+                    </a>
+                    <div class="icons">
+                        <a href="#head"><i class="ion-share"
+                                onclick='buy_now("MERIDA LIGHT-UP WAND","PIXAR/JPG/mrida1.jpg",45.90,"PIXAR/Merida Light-Up Wand.html")'>BUY
+                                NOW</i></a>
+                    </div>
+                    <a onclick='add_to_cart("MERIDA LIGHT-UP WAND","PIXAR/JPG/mrida1.jpg",45.90,"PIXAR/Merida Light-Up Wand.html")'
+                        class="add-to-cart">Add
+                        to Cart</a>
+                </div>
+            </figure>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-6" id='pixar_17'>
+            <figure class="card">
+                <div class="image">
+                    <a href="PIXAR/MiguelHector.HTML">
+                        <img src="PIXAR/JPG/mi1.jpg" alt="TOY" />
+                    </a>
+                    <div class="icons">
+                        <a href="#head"><i class="ion-share"
+                                onclick='buy_now("MIGUEL & HECTOR ACTION FIGURE","PIXAR/JPG/mi1.jpg",55.50,"PIXAR/MiguelHector.HTML")'>BUY
+                                NOW</i></a>
+                    </div>
+                    <a onclick='add_to_cart("MIGUEL & HECTOR ACTION FIGURE","PIXAR/JPG/mi1.jpg",55.50,"PIXAR/MiguelHector.HTML")'
+                        class="add-to-cart">Add
+                        to Cart</a>
+                </div>
+            </figure>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6" id='pixar_18'>
+            <figure class="card">
+                <div class="image">
+                    <a href="PIXAR/No Spill Big Bubble.html">
+                        <img src="PIXAR/JPG/nsbb1.jpg" alt="TOY" />
+                    </a>
+                    <div class="icons">
+                        <a href="#head"><i class="ion-share"
+                                onclick='buy_now("NO SPILL BIG BUBBLE BUCKET BLUE ","PIXAR/JPG/nsbb1.jpg",45.90,"PIXAR/No Spill Big Bubble.html")'>BUY
+                                NOW</i></a>
+                    </div>
+                    <a onclick='add_to_cart("NO SPILL BIG BUBBLE BUCKET BLUE ","PIXAR/JPG/nsbb1.jpg",45.90,"PIXAR/No Spill Big Bubble.html")'
+                        class="add-to-cart">Add
+                        to Cart</a>
+                </div>
+            </figure>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6" id='pixar_19'>
+            <figure class="card">
+                <div class="image">
+                    <a href="PIXAR/No Spill Bubble Machine.html">
+                        <img src="PIXAR/JPG/nspill1.jpg" alt="TOY" />
+                    </a>
+                    <div class="icons">
+                        <a href="#head"><i class="ion-share"
+                                onclick='buy_now("NO SPILL BUBBLE MACHINE","PIXAR/JPG/nspill1.jpg",45.90,"PIXAR/No Spill Bubble Machine.html")'>BUY
+                                NOW</i></a>
+                    </div>
+                    <a onclick='add_to_car("NO SPILL BUBBLE MACHINE","PIXAR/JPG/nspill1.jpg",45.90,"PIXAR/No Spill Bubble Machine.html")'
+                        class="add-to-cart">Add
+                        to Cart</a>
+                </div>
+            </figure>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6" id='pixar_20'>
+            <figure class="card">
+                <div class="image">
+                    <a href="PIXAR/No Spill.html">
+                        <img src="PIXAR/JPG/nsbble1.jpg" alt="TOY" />
+                    </a>
+                    <div class="icons">
+                        <a href="#head"><i class="ion-share"
+                                onclick='buy_now("No Spill Big Bubble Bucket","PIXAR/JPG/nsbble1.jpg",45.90,"PIXAR/No Spill.html")'>BUY
+                                NOW</i></a>
+                    </div>
+                    <a onclick='add_to_cart("No Spill Big Bubble Bucket","PIXAR/JPG/nsbble1.jpg",45.90,"PIXAR/No Spill.html")'
+                        class="add-to-cart">Add
+                        to Cart</a>
+                </div>
+            </figure>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-6" id='pixar_21'>
+            <figure class="card">
+                <div class="image">
+                    <a href="PIXAR/Puppy Bubble Maker.html">
+                        <img src="PIXAR/JPG/pupy1.jpg" alt="TOY" />
+                    </a>
+                    <div class="icons">
+                        <a href="#head"><i class="ion-share"
+                                onclick='buy_now("PUPPY BUBBLE MAKER","PIXAR/JPG/pupy1.jpg",15.90,"PIXAR/Puppy Bubble Maker.html")'>BUY
+                                NOW</i></a>
+                    </div>
+                    <a onclick='add_to_cart("PUPPY BUBBLE MAKER","PIXAR/JPG/pupy1.jpg",15.90,"PIXAR/Puppy Bubble Maker.html")'
+                        class="add-to-cart">Add
+                        to Cart</a>
+                </div>
+            </figure>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6" id='pixar_22'>
+            <figure class="card">
+                <div class="image">
+                    <a href="PIXAR/Raya and the Last Dragon.html">
+                        <img src="PIXAR/JPG/rld1.jpg" alt="TOY" />
+                    </a>
+                    <div class="icons">
+                        <a href="#head"><i class="ion-share"
+                                onclick='buy_now("RAYA AND THE LAST DRAGON","PIXAR/JPG/rld1.jpg",45.90,"PIXAR/Raya and the Last Dragon.html")'>BUY
+                                NOW</i></a>
+                    </div>
+                    <a onclick='add_to_cart("RAYA AND THE LAST DRAGON","PIXAR/JPG/rld1.jpg",45.90,"PIXAR/Raya and the Last Dragon.html")'
+                        class="add-to-cart">Add
+                        to Cart</a>
+                </div>
+            </figure>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6" id='pixar_23'>
+            <figure class="card">
+                <div class="image">
+                    <a href="PIXAR/RexTalking.HTML">
+                        <img src="PIXAR/JPG/ri1.jpg" alt="TOY" />
+                    </a>
+                    <div class="icons">
+                        <a href="#head"><i class="ion-share"
+                                onclick='buy_now("REXTALKING ACTION FIGURE","PIXAR/JPG/ri1.jpg",19.99,"PIXAR/RexTalking.HTML")'>BUY
+                                NOW</i></a>
+                    </div>
+                    <a onclick='add_to_cart("REXTALKING ACTION FIGURE","PIXAR/JPG/ri1.jpg",19.99,"PIXAR/RexTalking.HTML")'
+                        class="add-to-cart">Add
+                        to Cart</a>
+                </div>
+            </figure>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6" id='pixar_24'>
+            <figure class="card">
+                <div class="image">
+                    <a href="PIXAR/Toy-Story-Alien.HTML">
+                        <img src="PIXAR/JPG/ta3.jpg" alt="TOY" />
+                    </a>
+                    <div class="icons">
+                        <a href="#head"><i class="ion-share"
+                                onclick='buy_now("TOY STORY ALIEN","PIXAR/JPG/ta3.jpg",14.50,"PIXAR/Toy-Story-Alien.HTML")'>BUY
+                                NOW</i></a>
+                    </div>
+                    <a onclick='add_to_cart("TOY STORY ALIEN","PIXAR/JPG/ta3.jpg",14.50,"PIXAR/Toy-Story-Alien.HTML")'
+                        class="add-to-cart">Add
+                        to Cart</a>
+                </div>
+            </figure>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-6" id='pixar_25'>
+            <figure class="card">
+                <div class="image">
+                    <a href="PIXAR/ToyStoryChogattai.HTML">
+                        <img src="PIXAR/JPG/c1.jpg" alt="TOY" />
+                    </a>
+                    <div class="icons">
+                        <a href="#head"><i class="ion-share"
+                                onclick='buy_now("TOY STORY CHOGATTAI","PIXAR/JPG/c1.jpg",25.50,"PIXAR/ToyStoryChogattai.HTML")'>BUY
+                                NOW</i></a>
+                    </div>
+                    <a onclick='add_to_cart("TOY STORY CHOGATTAI","PIXAR/JPG/c1.jpg",25.50,"PIXAR/ToyStoryChogattai.HTML")'
+                        class="add-to-cart">Add
+                        to Cart</a>
+                </div>
+            </figure>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6" id='pixar_26'>
+            <figure class="card">
+                <div class="image">
+                    <a href="PIXAR/Toystoryfig.HTML">
+                        <img src="PIXAR/JPG/ty1.jpg" alt="TOY" />
+                    </a>
+                    <div class="icons">
+                        <a href="#head"><i class="ion-share"
+                                onclick='buy_now("TOY STORY 4 FIGURE PLAY SETL","PIXAR/JPG/ty1.jpg",25.50,"PIXAR/Toystoryfig.HTML")'>BUY
+                                NOW</i></a>
+                    </div>
+                    <a onclick='add_to_cart("TOY STORY 4 FIGURE PLAY SETL","PIXAR/JPG/ty1.jpg",25.50,"PIXAR/Toystoryfig.HTML")'
+                        class="add-to-cart">Add
+                        to Cart</a>
+                </div>
+            </figure>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6" id='pixar_27'>
+            <figure class="card">
+                <div class="image">
+                    <a href="PIXAR/UP-DELUXE.HTML">
+                        <img src="PIXAR/JPG/u1.jpg" alt="TOY" />
+                    </a>
+                    <div class="icons">
+                        <a href="#head"><i class="ion-share"
+                                onclick='buy_now("UP DELUXE FIGURINE PLAY SET","PIXAR/JPG/u1.jpg",45.90,"PIXAR/UP-DELUXE.HTML")'>BUY
+                                NOW</i></a>
+                    </div>
+                    <a onclick='add_to_cart("UP DELUXE FIGURINE PLAY SET","PIXAR/JPG/u1.jpg",45.90,"PIXAR/UP-DELUXE.HTML")'
+                        class="add-to-cart">Add
+                        to Cart</a>
+                </div>
+            </figure>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6" id='pixar_28'>
+            <figure class="card">
+                <div class="image">
+                    <a href="PIXAR/Woody-Action.HTML">
+                        <img src="PIXAR/JPG/wa1.jpg" alt="TOY" />
+                    </a>
+                    <div class="icons">
+                        <a href="#head"><i class="ion-share"
+                                onclick='buy_now("WOODY ACTION FIGURE","PIXAR/JPG/wa1.jpg",12.99,"PIXAR/Woody-Action.HTML")'>BUY
+                                NOW</i></a>
+                    </div>
+                    <a onclick='add_to_cart("WOODY ACTION FIGURE","PIXAR/JPG/wa1.jpg",12.99,"PIXAR/Woody-Action.HTML")'
+                        class="add-to-cart">Add
+                        to Cart</a>
+                </div>
+            </figure>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-6" id='pixar_29'>
+            <figure class="card">
+                <div class="image">
+                    <a href="PIXAR/Woody-Interactive.HTML">
+                        <img src="PIXAR/JPG/wo1.jpg" alt="TOY" />
+                    </a>
+                    <div class="icons">
+                        <a href="#head"><i class="ion-share"
+                                onclick='buy_now("WOODY INTERACTIVE TALKING ACTION FIGURE","PIXAR/JPG/wo1.jpg",19.99,"PIXAR/Woody-Interactive.HTML")'>BUY
+                                NOW</i></a>
+                    </div>
+                    <a onclick='add_to_cart("WOODY INTERACTIVE TALKING ACTION FIGURE","PIXAR/JPG/wo1.jpg",19.99,"PIXAR/Woody-Interactive.HTML")'
+                        class="add-to-cart">Add
+                        to Cart</a>
+                </div>
+            </figure>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6" id='pixar_30'>
+            <figure class="card">
+                <div class="image">
+                    <a href="PIXAR/WOODYROBO.HTML">
+                        <img src="PIXAR/JPG/w1.jpg" alt="TOY" />
+                    </a>
+                    <div class="icons">
+                        <a href="#head"><i class="ion-share"
+                                onclick='buy_now("WOODYROBO ACTION FIGURE SET","PIXAR/JPG/w1.jpg",29.00,"PIXAR/WOODYROBO.HTML")'>BUY
+                                NOW</i></a>
+                    </div>
+                    <a onclick='add_to_cart("WOODYROBO ACTION FIGURE SET","PIXAR/JPG/w1.jpg",29.00,"PIXAR/WOODYROBO.HTML")'
+                        class="add-to-cart">Add
+                        to Cart</a>
+                </div>
+            </figure>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6" id='pixar_31'>
+            <figure class="card">
+                <div class="image">
+                    <a href="PIXAR/Zurg-Talking.HTML">
+                        <img src="PIXAR/JPG/z1.jpg" alt="TOY" />
+                    </a>
+                    <div class="icons">
+                        <a href="#head"><i class="ion-share"
+                                onclick='buy_now("ZURG TALKINGACTION FIGURE","PIXAR/JPG/z1.jpg",12.99,"PIXAR/Zurg-Talking.HTML")'>BUY
+                                NOW</i></a>
+                    </div>
+                    <a onclick='add_to_cart("ZURG TALKINGACTION FIGURE","PIXAR/JPG/z1.jpg",12.99,"PIXAR/Zurg-Talking.HTML")'
+                        class="add-to-cart">Add
+                        to Cart</a>
+                </div>
+            </figure>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-6" id='ben10_1'>
+            <figure class="card">
+                <div class="image">
+                    <a href="BEN-10/ARCHERY.HTML">
+                        <img src="BEN-10/JPG/ARCHERY1.jpg" alt="TOY" />
+                    </a>
+                    <div class="icons">
+                        <a href="#head"><i class="ion-share"
+                                onclick='buy_now("BEN-10 ARCHERY","BEN-10/JPG/ARCHERY1.jpg",13.99,"BEN-10/ARCHERY.HTML")'>BUY
+                                NOW</i></a>
+                    </div>
+                    <a onclick='add_to_cart("BEN-10 ARCHERY","BEN-10/JPG/ARCHERY1.jpg",13.99,"BEN-10/ARCHERY.HTML")'
+                        class="add-to-cart">Add
+                        to Cart</a>
+                </div>
+            </figure>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6" id='ben10_2'>
+            <figure class="card">
+                <div class="image">
+                    <a href="BEN-10/CAR.HTML">
+                        <img src="BEN-10/JPG/CAR1.jpg" alt="TOY" />
+                    </a>
+                    <div class="icons">
+                        <a href="#head"><i class="ion-share"
+                                onclick='buy_now("BEN-10 CAR ACTION FIGURE","BEN-10/JPG/CAR1.jpg",11.50,"BEN-10/CAR.HTML")'>BUY
+                                NOW</i></a>
+                    </div>
+                    <a onclick='add_to_cart("BEN-10 CAR ACTION FIGURE","BEN-10/JPG/CAR1.jpg",11.50,"BEN-10/CAR.HTML")'
+                        class="add-to-cart">Add
+                        to Cart</a>
+                </div>
+            </figure>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6" id='ben10_3'>
+            <figure class="card">
+                <div class="image">
+                    <a href="BEN-10/FEEDBACK.HTML">
+                        <img src="BEN-10/JPG/FEEDBACK1.jpg" alt="TOY" />
+                    </a>
+                    <div class="icons">
+                        <a href="#head"><i class="ion-share"
+                                onclick='buy_now("FEEDBACK ACTION FIGURE","BEN-10/JPG/FEEDBACK1.jpg",9.99,"BEN-10/FEEDBACK.HTML")'>BUY
+                                NOW</i></a>
+                    </div>
+                    <a onclick='add_to_cart("FEEDBACK ACTION FIGURE","BEN-10/JPG/FEEDBACK1.jpg",9.99,"BEN-10/FEEDBACK.HTML")'
+                        class="add-to-cart">Add
+                        to Cart</a>
+                </div>
+            </figure>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6" id='ben10_4'>
+            <figure class="card">
+                <div class="image">
+                    <a href="BEN-10/GAME.HTML">
+                        <img src="BEN-10/JPG/GAME1.jpg" alt="TOY" />
+                    </a>
+                    <div class="icons">
+                        <a href="#head"><i class="ion-share"
+                                onclick='buy_now("BEN-10 BOARD GAMES","BEN-10/JPG/GAME1.jpg",15.50,"BEN-10/GAME.HTML")'>BUY
+                                NOW</i></a>
+                    </div>
+                    <a onclick='add_to_cart("BEN-10 BOARD GAMES","BEN-10/JPG/GAME1.jpg",15.50,"BEN-10/GAME.HTML")'
+                        class="add-to-cart">Add
+                        to Cart</a>
+                </div>
+            </figure>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-6" id='ben10_5'>
+            <figure class="card">
+                <div class="image">
+                    <a href="BEN-10/GUN-BUBBLE.HTML">
+                        <img src="BEN-10/JPG/GUN-BUBBLE1.jpg" alt="TOY" />
+                    </a>
+                    <div class="icons">
+                        <a href="#head"><i class="ion-share"
+                                onclick='buy_now("BUBBLE GUN","BEN-10/JPG/GUN-BUBBLE1.jpg",21.50,"BEN-10/GUN-BUBBLE.HTML")'>BUY
+                                NOW</i></a>
+                    </div>
+                    <a onclick='add_to_cart("BUBBLE GUN","BEN-10/JPG/GUN-BUBBLE1.jpg",21.50,"BEN-10/GUN-BUBBLE.HTML")'
+                        class="add-to-cart">Add
+                        to Cart</a>
+                </div>
+            </figure>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6" id='ben10_6'>
+            <figure class="card">
+                <div class="image">
+                    <a href="BEN-10/GUN-WATER.HTML">
+                        <img src="BEN-10/JPG/GUN-WATER1.jpg" alt="TOY" />
+                    </a>
+                    <div class="icons">
+                        <a href="#head"><i class="ion-share"
+                                onclick='buy_now("WATER GUN","BEN-10/JPG/GUN-WATER1.jpg",15.50,"BEN-10/GUN-WATER.HTML")'>BUY
+                                NOW</i></a>
+                    </div>
+                    <a onclick='add_to_cart("WATER GUN","BEN-10/JPG/GUN-WATER1.jpg",15.50,"BEN-10/GUN-WATER.HTML")'
+                        class="add-to-cart">Add
+                        to Cart</a>
+                </div>
+            </figure>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6" id='ben10_7'>
+            <figure class="card">
+                <div class="image">
+                    <a href="BEN-10/LEGO.HTML">
+                        <img src="BEN-10/JPG/LEGO1.jpg" alt="TOY" />
+                    </a>
+                    <div class="icons">
+                        <a href="#head"><i class="ion-share"
+                                onclick='buy_now("BEN-10 LEGOS","BEN-10/JPG/LEGO1.jpg",19.99,"BEN-10/LEGO.HTML")'>BUY
+                                NOW</i></a>
+                    </div>
+                    <a onclick='add_to_cart("BEN-10 LEGOS","BEN-10/JPG/LEGO1.jpg",19.99,"BEN-10/LEGO.HTML")'
+                        class="add-to-cart">Add
+                        to Cart</a>
+                </div>
+            </figure>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6" id='ben10_8'>
+            <figure class="card">
+                <div class="image">
+                    <a href="BEN-10/OMNITRIX.HTML">
+                        <img src="BEN-10/JPG/OMNITRIX1.jpg" alt="TOY" />
+                    </a>
+                    <div class="icons">
+                        <a href="#head"><i class="ion-share"
+                                onclick='buy_now("OMNITRIX","BEN-10/JPG/OMNITRIX1.jpg",17.50,"BEN-10/OMNITRIX.HTML")'>BUY
+                                NOW</i></a>
+                    </div>
+                    <a onclick='add_to_cart("OMNITRIX","BEN-10/JPG/OMNITRIX1.jpg",17.50,"BEN-10/OMNITRIX.HTML")'
+                        class="add-to-cart">Add
+                        to Cart</a>
+                </div>
+            </figure>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-6" id='ben10_9'>
+            <figure class="card">
+                <div class="image">
+                    <a href="BEN-10/PLANE.HTML">
+                        <img src="BEN-10/JPG/PLANE1.jpg" alt="TOY" />
+                    </a>
+                    <div class="icons">
+                        <a href="#head"><i class="ion-share"
+                                onclick='buy_now("BEN-10 PLANE","BEN-10/JPG/PLANE1.jpg",21.50,"BEN-10/PLANE.HTML")'>BUY
+                                NOW</i></a>
+                    </div>
+                    <a onclick='add_to_cart("BEN-10 PLANE","BEN-10/JPG/PLANE1.jpg",21.50,"BEN-10/PLANE.HTML")'
+                        class="add-to-cart">Add
+                        to Cart</a>
+                </div>
+            </figure>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6" id='ben10_10'>
+            <figure class="card">
+                <div class="image">
+                    <a href="BEN-10/R-CAR.HTML">
+                        <img src="BEN-10/JPG/R-CAR1.jpg" alt="TOY" />
+                    </a>
+                    <div class="icons">
+                        <a href="#head"><i class="ion-share"
+                                onclick='buy_now("REMOTE CONTROL CAR","BEN-10/JPG/R-CAR1.jpg",17.99,"BEN-10/R-CAR.HTML")'>BUY
+                                NOW</i></a>
+                    </div>
+                    <a onclick='add_to_cart("REMOTE CONTROL CAR","BEN-10/JPG/R-CAR1.jpg",17.99,"BEN-10/R-CAR.HTML")'
+                        class="add-to-cart">Add
+                        to Cart</a>
+                </div>
+            </figure>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6" id='ben10_11'>
+            <figure class="card">
+                <div class="image">
+                    <a href="BEN-10/SCOOTY.HTML">
+                        <img src="BEN-10/JPG/SCOOTY1.jpg" alt="TOY" />
+                    </a>
+                    <div class="icons">
+                        <a href="#head"><i class="ion-share"
+                                onclick='buy_now("SCOOTY","BEN-10/JPG/SCOOTY1.jpg",29.99,"BEN-10/SCOOTY.HTML")'>BUY
+                                NOW</i></a>
+                    </div>
+                    <a onclick='add_to_cart("SCOOTY","BEN-10/JPG/SCOOTY1.jpg",29.99,"BEN-10/SCOOTY.HTML")'
+                        class="add-to-cart">Add
+                        to Cart</a>
+                </div>
+            </figure>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6" id='ben10_12'>
+            <figure class="card">
+                <div class="image">
+                    <a href="BEN-10/SKATEBOARD.HTML">
+                        <img src="BEN-10/JPG/SKATEBOARD1.jpg" alt="TOY" />
+                    </a>
+                    <div class="icons">
+                        <a href="#head"><i class="ion-share"
+                                onclick='buy_now("BEN-10 SKATEBOARD","BEN-10/JPG/SKATEBOARD1.jpg",25.00,"BEN-10/SKATEBOARD.HTML")'>BUY
+                                NOW</i></a>
+                    </div>
+                    <a onclick='add_to_cart("BEN-10 SKATEBOARD","BEN-10/JPG/SKATEBOARD1.jpg",25.00,"BEN-10/SKATEBOARD.HTML")'
+                        class="add-to-cart">Add
+                        to Cart</a>
+                </div>
+            </figure>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-6" id='disnep_1'>
+            <figure class="card">
+                <div class="image">
+                    <a href="DISNEP/Arendelle Castle.html">
+                        <img src="DISNEP/JPG/adc1.jpg" alt="TOY" />
+                    </a>
+                    <div class="icons">
+                        <a href="#head"><i class="ion-share"
+                                onclick='buy_now("ARENDELLE CASTLE","DISNEP/JPG/adc1.jpg",45.90,"DISNEP/Arendelle Castle.html")'>BUY
+                                NOW</i></a>
+                    </div>
+                    <a onclick='add_to_cart("ARENDELLE CASTLE","DISNEP/JPG/adc1.jpg",45.90,"DISNEP/Arendelle Castle.html")'
+                        class="add-to-cart">Add
+                        to Cart</a>
+                </div>
+            </figure>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6" id='disnep_2'>
+            <figure class="card">
+                <div class="image">
+                    <a href="DISNEP/Ariel Clamshell Bubble Wand.html">
+                        <img src="DISNEP/JPG/ariel1.jpg" alt="TOY" />
+                    </a>
+                    <div class="icons">
+                        <a href="#head"><i class="ion-share"
+                                onclick='buy_now("ARIEL CLAMSHELL BUBBLE WAND","DISNEP/JPG/ariel1.jpg",25.90,"DISNEP/Ariel Clamshell Bubble Wand.html")'>BUY
+                                NOW</i></a>
+                    </div>
+                    <a onclick='add_to_cart("ARIEL CLAMSHELL BUBBLE WAND","DISNEP/JPG/ariel1.jpg",25.90,"DISNEP/Ariel Clamshell Bubble Wand.html")'
+                        class="add-to-cart">Add
+                        to Cart</a>
+                </div>
+            </figure>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6" id='disnep_3'>
+            <figure class="card">
+                <div class="image">
+                    <a href="DISNEP/Belle and Rapunzels Royal Stables.html">
+                        <img src="DISNEP/JPG/br1.jpg" alt="TOY" />
+                    </a>
+                    <div class="icons">
+                        <a href="#head"><i class="ion-share"
+                                onclick='buy_now("BELLE AND RAPUNZEL ROYAL STABLES","DISNEP/JPG/br1.jpg",44.99,"DISNEP/Belle and Rapunzels Royal Stables.html")'>BUY
+                                NOW</i></a>
+                    </div>
+                    <a onclick='add_to_cart("BELLE AND RAPUNZEL ROYAL STABLES","DISNEP/JPG/br1.jpg",44.99,"DISNEP/Belle and Rapunzels Royal Stables.html")'
+                        class="add-to-cart">Add
+                        to Cart</a>
+                </div>
+            </figure>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6" id='disnep_4'>
+            <figure class="card">
+                <div class="image">
+                    <a href="DISNEP/Belle and the Beasts Castle.html">
+                        <img src="DISNEP/JPG/bb1.jpg" alt="TOY" />
+                    </a>
+                    <div class="icons">
+                        <a href="#head"><i class="ion-share"
+                                onclick='buy_now("BELLE AND THE BEASTS CASTLE","DISNEP/JPG/bb1.jpg",45.90,"DISNEP/Belle and the Beasts Castle.html")'>BUY
+                                NOW</i></a>
+                    </div>
+                    <a onclick='add_to_cart("BELLE AND THE BEASTS CASTLE","DISNEP/JPG/bb1.jpg",45.90,"DISNEP/Belle and the Beasts Castle.html")'
+                        class="add-to-cart">Add
+                        to Cart</a>
+                </div>
+            </figure>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-6" id='disnep_5'>
+            <figure class="card">
+                <div class="image">
+                    <a href="DISNEP/Bingo Plush.html">
+                        <img src="DISNEP/JPG/bng1.jpg" alt="TOY" />
+                    </a>
+                    <div class="icons">
+                        <a href="#head"><i class="ion-share"
+                                onclick='buy_now("BINGO PLUSH","DISNEP/JPG/bng1.jpg",15.00,"DISNEP/Bingo Plush.html")'>BUY
+                                NOW</i></a>
+                    </div>
+                    <a onclick='add_to_cart("BINGO PLUSH","DISNEP/JPG/bng1.jpg",15.00,"DISNEP/Bingo Plush.html")'
+                        class="add-to-cart">Add
+                        to Cart</a>
+                </div>
+            </figure>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6" id='disnep_6'>
+            <figure class="card">
+                <div class="image">
+                    <a href="DISNEP/Bow and Arrow.html">
+                        <img src="DISNEP/JPG/bow1.jpg" alt="TOY" />
+                    </a>
+                    <div class="icons">
+                        <a href="#head"><i class="ion-share"
+                                onclick='buy_now("BOW AND ARROW","DISNEP/JPG/bow1.jpg",39.99,"DISNEP/Bow and Arrow.html")'>BUY
+                                NOW</i></a>
+                    </div>
+                    <a onclick='add_to_cart("BOW AND ARROW","DISNEP/JPG/bow1.jpg",39.99,"DISNEP/Bow and Arrow.html")'
+                        class="add-to-cart">Add
+                        to Cart</a>
+                </div>
+            </figure>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6" id='disnep_7'>
+            <figure class="card">
+                <div class="image">
+                    <a href="DISNEP/Cinderella.html">
+                        <img src="DISNEP/JPG/cndrla1.jpg" alt="TOY" />
+                    </a>
+                    <div class="icons">
+                        <a href="#head"><i class="ion-share"
+                                onclick='buy_now("CINDERELLA ACTION FIGURE","DISNEP/JPG/cndrla1.jpg",15.90,"DISNEP/Cinderella.html")'>BUY
+                                NOW</i></a>
+                    </div>
+                    <a onclick='add_to_cart("CINDERELLA ACTION FIGURE","DISNEP/JPG/cndrla1.jpg",15.90,"DISNEP/Cinderella.html")'
+                        class="add-to-cart">Add
+                        to Cart</a>
+                </div>
+            </figure>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6" id='disnep_8'>
+            <figure class="card">
+                <div class="image">
+                    <a href="DISNEP/Daisy Duck Plush.html">
+                        <img src="DISNEP/JPG/dsyd1.jpg" alt="TOY" />
+                    </a>
+                    <div class="icons">
+                        <a href="#head"><i class="ion-share"
+                                onclick='buy_now("DAISY DUCK-PLUSH TOY","DISNEP/JPG/dsyd1.jpg",15.00,"DISNEP/Daisy Duck Plush.html")'>BUY
+                                NOW</i></a>
+                    </div>
+                    <a onclick='add_to_cart("DAISY DUCK-PLUSH TOY","DISNEP/JPG/dsyd1.jpg",15.00,"DISNEP/Daisy Duck Plush.html")'
+                        class="add-to-cart">Add
+                        to Cart</a>
+                </div>
+            </figure>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-6" id='disnep_9'>
+            <figure class="card">
+                <div class="image">
+                    <a href="DISNEP/Disney nuiMOs Outfit.html">
+                        <img src="DISNEP/JPG/dn1.jpg" alt="TOY" />
+                    </a>
+                    <div class="icons">
+                        <a href="#head"><i class="ion-share"
+                                onclick='buy_now("NUIMOS OUTFIT","DISNEP/JPG/dn1.jpg",19.99,"DISNEP/Disney nuiMOs Outfit.html")'>BUY
+                                NOW</i></a>
+                    </div>
+                    <a onclick='add_to_cart("NUIMOS OUTFIT","DISNEP/JPG/dn1.jpg",19.99,"DISNEP/Disney nuiMOs Outfit.html")'
+                        class="add-to-cart">Add
+                        to Cart</a>
+                </div>
+            </figure>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6" id='disnep_10'>
+            <figure class="card">
+                <div class="image">
+                    <a href="DISNEP/Disney Parks Wishables Mystery Plush.html">
+                        <img src="DISNEP/JPG/mstry1.jpg" alt="TOY" />
+                    </a>
+                    <div class="icons">
+                        <a href="#head"><i class="ion-share"
+                                onclick='buy_now("PARKS WISHABLES MYSTERY PLUSH","DISNEP/JPG/mstry1.jpg",25.00,"DISNEP/Disney Parks Wishables Mystery Plush.html")'>BUY
+                                NOW</i></a>
+                    </div>
+                    <a onclick='add_to_cart("PARKS WISHABLES MYSTERY PLUSH","DISNEP/JPG/mstry1.jpg",25.00,"DISNEP/Disney Parks Wishables Mystery Plush.html")'
+                        class="add-to-cart">Add
+                        to Cart</a>
+                </div>
+            </figure>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6" id='disnep_11'>
+            <figure class="card">
+                <div class="image">
+                    <a href="DISNEP/Donald Duck Plush.html">
+                        <img src="DISNEP/JPG/dd1.jpg" alt="TOY" />
+                    </a>
+                    <div class="icons">
+                        <a href="#head"><i class="ion-share"
+                                onclick='buy_now("DONALD DUCK PLUSH TOY","DISNEP/JPG/dd1.jpg",15.90,"DISNEP/Donald Duck Plush.html")'>BUY
+                                NOW</i></a>
+                    </div>
+                    <a onclick='add_to_cart("DONALD DUCK PLUSH TOY","DISNEP/JPG/dd1.jpg",15.90,"DISNEP/Donald Duck Plush.html")'
+                        class="add-to-cart">Add
+                        to Cart</a>
+                </div>
+            </figure>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6" id='disnep_12'>
+            <figure class="card">
+                <div class="image">
+                    <a href="DISNEP/Dory Plush.html">
+                        <img src="DISNEP/JPG/dory1.jpg" alt="TOY" />
+                    </a>
+                    <div class="icons">
+                        <a href="#head"><i class="ion-share"
+                                onclick='buy_now("DORY PLUSH TOY","DISNEP/JPG/dory1.jpg",17.99,"DISNEP/Dory Plush.html")'>BUY
+                                NOW</i></a>
+                    </div>
+                    <a onclick='add_to_cart("DORY PLUSH TOY","DISNEP/JPG/dory1.jpg",17.99,"DISNEP/Dory Plush.html")'
+                        class="add-to-cart">Add
+                        to Cart</a>
+                </div>
+            </figure>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-6" id='disnep_13'>
+            <figure class="card">
+                <div class="image">
+                    <a href="DISNEP/Jaguar Plush.html">
+                        <img src="DISNEP/JPG/jag1.jpg" alt="TOY" />
+                    </a>
+                    <div class="icons">
+                        <a href="#head"><i class="ion-share"
+                                onclick='buy_now("JAGUAR PLUSH TOY","DISNEP/JPG/jag1.jpg",12.99,"DISNEP/Jaguar Plush.html")'>BUY
+                                NOW</i></a>
+                    </div>
+                    <a onclick='add_to_cart("JAGUAR PLUSH TOY","DISNEP/JPG/jag1.jpg",12.99,"DISNEP/Jaguar Plush.html")'
+                        class="add-to-cart">Add
+                        to Cart</a>
+                </div>
+            </figure>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6" id='disnep_14'>
+            <figure class="card">
+                <div class="image">
+                    <a href="DISNEP/LEGO Ariels Underwater Palace.html">
+                        <img src="DISNEP/JPG/aup1.jpg" alt="TOY" />
+                    </a>
+                    <div class="icons">
+                        <a href="#head"><i class="ion-share"
+                                onclick='buy_now("ARIEL LEGOS","DISNEP/JPG/aup1.jpg",19.99,"DISNEP/LEGO Ariels Underwater Palace.html")'>BUY
+                                NOW</i></a>
+                    </div>
+                    <a onclick='add_to_cart("ARIEL LEGOS","DISNEP/JPG/aup1.jpg",19.99,"DISNEP/LEGO Ariels Underwater Palace.html")'
+                        class="add-to-cart">Add
+                        to Cart</a>
+                </div>
+            </figure>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6" id='disnep_15'>
+            <figure class="card">
+                <div class="image">
+                    <a href="DISNEP/Littles Belle Cottage.html">
+                        <img src="DISNEP/JPG/lbc1.jpg" alt="TOY" />
+                    </a>
+                    <div class="icons">
+                        <a href="#head"><i class="ion-share"
+                                onclick='buy_now("LITTLES BELLE COTTAGE","DISNEP/JPG/lbc1.jpg",15.90,"DISNEP/Littles Belle Cottage.html")'>BUY
+                                NOW</i></a>
+                    </div>
+                    <a onclick='add_to_cart("LITTLES BELLE COTTAGE","DISNEP/JPG/lbc1.jpg",15.90,"DISNEP/Littles Belle Cottage.html")'
+                        class="add-to-cart">Add
+                        to Cart</a>
+                </div>
+            </figure>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6" id='disnep_16'>
+            <figure class="card">
+                <div class="image">
+                    <a href="DISNEP/Littles Jasmine.html">
+                        <img src="DISNEP/JPG/jsmn1.jpg" alt="TOY" />
+                    </a>
+                    <div class="icons">
+                        <a href="#head"><i class="ion-share"
+                                onclick='buy_now("LITTLE JASMINE","DISNEP/JPG/jsmn1.jpg",34.99,"DISNEP/Littles Jasmine.html")'>BUY
+                                NOW</i></a>
+                    </div>
+                    <a onclick='add_to_cart("LITTLE JASMINE","DISNEP/JPG/jsmn1.jpg",34.99,"DISNEP/Littles Jasmine.html")'
+                        class="add-to-cart">Add
+                        to Cart</a>
+                </div>
+            </figure>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-6" id='disnep_17'>
+            <figure class="card">
+                <div class="image">
+                    <a href="DISNEP/Mickey Mouse Plush.html">
+                        <img src="DISNEP/JPG/mm1.jpg" alt="TOY" />
+                    </a>
+                    <div class="icons">
+                        <a href="#head"><i class="ion-share"
+                                onclick='buy_now("MICKY MOUSE PLUSH TOY","DISNEP/JPG/mm1.jpg",12.99,"DISNEP/Mickey Mouse Plush.html")'>BUY
+                                NOW</i></a>
+                    </div>
+                    <a onclick='add_to_cart("MICKY MOUSE PLUSH TOY","DISNEP/JPG/mm1.jpg",12.99,"DISNEP/Mickey Mouse Plush.html")'
+                        class="add-to-cart">Add
+                        to Cart</a>
+                </div>
+            </figure>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6" id='disnep_18'>
+            <figure class="card">
+                <div class="image">
+                    <a href="DISNEP/Pluto Plush.HTML">
+                        <img src="DISNEP/JPG/pluto1.jpg" alt="TOY" />
+                    </a>
+                    <div class="icons">
+                        <a href="#head"><i class="ion-share"
+                                onclick='buy_now("PLUTO PLUSH","DISNEP/JPG/pluto1.jpg",12.99,"DISNEP/Pluto Plush.HTML")'>BUY
+                                NOW</i></a>
+                    </div>
+                    <a onclick='add_to_cart("PLUTO PLUSH","DISNEP/JPG/pluto1.jpg",12.99,"DISNEP/Pluto Plush.HTML")'
+                        class="add-to-cart">Add
+                        to Cart</a>
+                </div>
+            </figure>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6" id='disnep_19'>
+            <figure class="card">
+                <div class="image">
+                    <a href="DISNEP/Princess Magical Tea.html">
+                        <img src="DISNEP/JPG/tea1.jpg" alt="TOY" />
+                    </a>
+                    <div class="icons">
+                        <a href="#head"><i class="ion-share"
+                                onclick='buy_now("PRINCESS MAGICAL TEA","DISNEP/JPG/tea1.jpg",15.99,"DISNEP/Princess Magical Tea.html")'>BUY
+                                NOW</i></a>
+                    </div>
+                    <a onclick='add_to_cart("PRINCESS MAGICAL TEA","DISNEP/JPG/tea1.jpg",15.99,"DISNEP/Princess Magical Tea.html")'
+                        class="add-to-cart">Add
+                        to Cart</a>
+                </div>
+            </figure>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6" id='disnep_20'>
+            <figure class="card">
+                <div class="image">
+                    <a href="DISNEP/Rapunzel Tower.html">
+                        <img src="DISNEP/JPG/rpnzl1.jpg" alt="TOY" />
+                    </a>
+                    <div class="icons">
+                        <a href="#head"><i class="ion-share"
+                                onclick='buy_now("BRAPUNZEL","DISNEP/JPG/rpnzl1.jpg",15.49,"DISNEP/Rapunzel Tower.html")'>BUY
+                                NOW</i></a>
+                    </div>
+                    <a onclick='add_to_cart("BRAPUNZEL","DISNEP/JPG/rpnzl1.jpg",15.49,"DISNEP/Rapunzel Tower.html")'
+                        class="add-to-cart">Add
+                        to Cart</a>
+                </div>
+            </figure>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-6" id='disnep_21'>
+            <figure class="card">
+                <div class="image">
+                    <a href="DISNEP/Rolly Plush.html">
+                        <img src="DISNEP/JPG/rolly1.jpg" alt="TOY" />
+                    </a>
+                    <div class="icons">
+                        <a href="#head"><i class="ion-share"
+                                onclick='buy_now("ROLLY PLUSH","DISNEP/JPG/rolly1.jpg",12.99,"DISNEP/Rolly Plush.html")'>BUY
+                                NOW</i></a>
+                    </div>
+                    <a onclick='add_to_cart("ROLLY PLUSH","DISNEP/JPG/rolly1.jpg",12.99,"DISNEP/Rolly Plush.html")'
+                        class="add-to-cart">Add
+                        to Cart</a>
+                </div>
+            </figure>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6" id='disnep_22'>
+            <figure class="card">
+                <div class="image">
+                    <a href="DISNEP/Simba Plush.html">
+                        <img src="DISNEP/JPG/smb1.jpg" alt="TOY" />
+                    </a>
+                    <div class="icons">
+                        <a href="#head"><i class="ion-share"
+                                onclick='buy_now("SIMBA PLUSH","DISNEP/JPG/smb1.jpg",12.99,"DISNEP/Simba Plush.html")'>BUY
+                                NOW</i></a>
+                    </div>
+                    <a onclick='add_to_cart("SIMBA PLUSH","DISNEP/JPG/smb1.jpg",12.99,"DISNEP/Simba Plush.html")'
+                        class="add-to-cart">Add
+                        to Cart</a>
+                </div>
+            </figure>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6" id='disnep_23'>
+            <figure class="card">
+                <div class="image">
+                    <a href="DISNEP/small world Board Game.html">
+                        <img src="DISNEP/JPG/swb1.jpg" alt="TOY" />
+                    </a>
+                    <div class="icons">
+                        <a href="#head"><i class="ion-share"
+                                onclick='buy_now("BOARD GAME","DISNEP/JPG/swb1.jpg",19.99,"DISNEP/small world Board Game.html")'>BUY
+                                NOW</i></a>
+                    </div>
+                    <a onclick='add_to_cart("BOARD GAME","DISNEP/JPG/swb1.jpg",19.99,"DISNEP/small world Board Game.html")'
+                        class="add-to-cart">Add
+                        to Cart</a>
+                </div>
+            </figure>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6" id='disnep_24'>
+            <figure class="card">
+                <div class="image">
+                    <a href="DISNEP/Snow White Disney Parks Wishables Plush.html">
+                        <img src="DISNEP/JPG/snw1.jpg" alt="TOY" />
+                    </a>
+                    <div class="icons">
+                        <a href="#head"><i class="ion-share"
+                                onclick='buy_now("SNOW WHITE","DISNEP/JPG/snw1.jpg",12.99,"DISNEP/Snow White Disney Parks Wishables Plush.html")'>BUY
+                                NOW</i></a>
+                    </div>
+                    <a onclick='add_to_cart("SNOW WHITE","DISNEP/JPG/snw1.jpg",12.99,"DISNEP/Snow White Disney Parks Wishables Plush.html")'
+                        class="add-to-cart">Add
+                        to Cart</a>
+                </div>
+            </figure>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-6" id='disnep_25'>
+            <figure class="card">
+                <div class="image">
+                    <a href="DISNEP/Sven Plush.html">
+                        <img src="DISNEP/JPG/sven1.jpg" alt="TOY" />
+                    </a>
+                    <div class="icons">
+                        <a href="#head"><i class="ion-share"
+                                onclick='buy_now("SVEN PLUSH","DISNEP/JPG/sven1.jpg",12.99,"DISNEP/Sven Plush.html")'>BUY
+                                NOW</i></a>
+                    </div>
+                    <a onclick='add_to_cart("SVEN PLUSH","DISNEP/JPG/sven1.jpg",12.99,"DISNEP/Sven Plush.html")'
+                        class="add-to-cart">Add
+                        to Cart</a>
+                </div>
+            </figure>
+        </div>
+    </div>
+
+    <div class="row" id="footer">
+        <div class="col-lg-12" id="d-wrapper2" style="transform: rotate(180deg);position: relative;top: 30px;">
+            <div class="zig-zag-bottom2">
+                <div style="transform: rotate(180deg);">
+                    <h1>TOYO TOYS</h1>
+                    <div class="pt-5 pb-3 text-center">
+                        <img src="ICONS/location.png" alt="location" title="location" width="30px"
+                            style="filter: invert(100%);">
+                        <span>San Francisco, CA 94102, US 1234</span>
+                    </div>
+                    <div class="pb-3 text-center">
+                        <img src="ICONS/clock.png" alt="clock" title="clock" width="30px" style="filter: invert(100%);">
+                        <span>Monday - Friday: 7:30 am - 17:00 pm, Saturday: 8:00 am - 15:00 pm</span>
+                    </div>
+                    <div class="pb-5 text-center">
+                        <img src="ICONS/mobile.png" alt="mobile" title="mobile" width="30px"
+                            style="filter: invert(100%);">
+                        <span>+92 322 924 3965;+92 321 567 5678</span>
+                    </div>
+                    <div class="flex pb-5 text-center img-socialMedia">
+                        <a href="https://www.facebook.com/" target="_blank"><img src="ICONS/FACEBOOK.png" alt="FACEBOOK"
+                                width="30px" title="FACEBOOK"></a>
+                        <a href="https://twitter.com/home?lang=en" target="_blank"><img src="ICONS/TWITTER.png"
+                                alt="TWITTER" width="30px" title="TWITTER"></a>
+                        <a href="https://www.instagram.com/" target="_blank"><img src="ICONS/INSTAGRAM.png"
+                                alt="INSTAGRAM" width="40px" style="border: 2px solid black;border-radius: 50%;"
+                                title="INSTAGRAM"></a>
+                        <a href="https://www.linkedin.com/signup" target="_blank"><img src="ICONS/LINKEDIN.png"
+                                alt="LINKEDIN" width="30px" title="LINKEDIN"></a>
+                        <a href="https://www.youtube.com/" target="_blank"><img src="ICONS/YOUTUBE.png" alt="YOUTUBE"
+                                width="30px" title="YOUTUBE"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        $(document).ready(function () {
+            $('#hide-3').hide();
+            $('#hide-4').hide();
+            $('#showMore2').click(function () {
+                $('#hide-3').slideToggle();
+                $('#hide-4').slideToggle();
+                if (document.getElementById("showMore2").innerHTML == "See More") {
+                    document.getElementById("showMore2").innerHTML = "See Less"
+                }
+                else {
+                    document.getElementById("showMore2").innerHTML = "See More"
+                }
+            })
+        })
+
+        function moreFilter2() {
+            var value = document.getElementById("select2").value;
+            switch (value) {
+                case "1":
+                    setTimeout(function () {
+                        location.replace("MARVEL/INDEX.HTML");
+                    }, 500);
+                    break;
+                case "2":
+                    setTimeout(function () {
+                        location.replace("BEN-10/INDEX.HTML");
+                    }, 500);
+                    break;
+                case "3":
+                    setTimeout(function () {
+                        location.replace("PIXAR/INDEX.HTML");
+                    }, 500);
+                    break;
+                case "4":
+                    setTimeout(function () {
+                        location.replace("DISNEP/INDEX.HTML");
+                    }, 500);
+                    break;
+
+                default:
+                    break;
+            }
+        }
+        $(document).ready(function () {
+            $('#hide-1').hide();
+            $('#hide-2').hide();
+            $('#showMore').click(function () {
+                $('#hide-1').slideToggle();
+                $('#hide-2').slideToggle();
+                if (document.getElementById("showMore").innerHTML == "See More") {
+                    document.getElementById("showMore").innerHTML = "See Less"
+                }
+                else {
+                    document.getElementById("showMore").innerHTML = "See More"
+                }
+            })
+        })
+
+        function moreFilter() {
+            var value = document.getElementById("select").value;
+            switch (value) {
+                case "1":
+                    setTimeout(function () {
+                        location.replace("MARVEL/INDEX.HTML");
+                    }, 500);
+                    break;
+                case "2":
+                    setTimeout(function () {
+                        location.replace("BEN-10/INDEX.HTML");
+                    }, 500);
+                    break;
+                case "3":
+                    setTimeout(function () {
+                        location.replace("PIXAR/INDEX.HTML");
+                    }, 500);
+                    break;
+                case "4":
+                    setTimeout(function () {
+                        location.replace("DISNEP/INDEX.HTML");
+                    }, 500);
+                    break;
+
+                default:
+                    break;
+            }
+        }
+
+        let marvel = 0;
+        let ben10 = 0;
+        let disnep = 0;
+        let pixar = 0;
+
+        function fresh() {
+            document.getElementById("aBox_1").checked = false;
+            document.getElementById("aBox_2").checked = false;
+            document.getElementById("aBox_3").checked = false;
+            document.getElementById("bBox_1").checked = false;
+            document.getElementById("bBox_2").checked = false;
+            document.getElementById("bBox_3").checked = false;
+            document.getElementById("bBox_4").checked = false;
+            marvel = 0;
+            ben10 = 0;
+            disnep = 0;
+            pixar = 0;
+        }
+
+        function brand(value) {
+            if (document.getElementById("aBox_1").checked == true || document.getElementById("aBox_2").checked == true || document.getElementById("aBox_3").checked == true) {
+                clearAge();
+            }
+            document.getElementById("heading2").innerHTML = "BRAND-WISE";
+            switch (value) {
+                case 1:
+                    marvel++;
+                    break;
+                case 2:
+                    ben10++;
+                    break;
+                case 3:
+                    disnep++;
+                    break;
+                case 4:
+                    pixar++;
+                    break;
+                default:
+                    break;
+            }
+            for (let i = 0; i < 18; i++) {
+                document.getElementById("marvel_" + (i + 1)).style.display = "none"
+            }
+            for (let i = 0; i < 12; i++) {
+                document.getElementById("ben10_" + (i + 1)).style.display = "none"
+            }
+            for (let i = 0; i < 25; i++) {
+                document.getElementById("disnep_" + (i + 1)).style.display = "none"
+            }
+            for (let i = 0; i < 31; i++) {
+                document.getElementById("pixar_" + (i + 1)).style.display = "none"
+            }
+            if (marvel % 2 != 0) {
+                // console.log("marvel" + marvel);
+                for (let i = 0; i < 18; i++) {
+                    document.getElementById("marvel_" + (i + 1)).style.display = "block"
+                }
+            }
+            if (ben10 % 2 != 0) {
+                // console.log("ben10" + ben10);
+                for (let i = 0; i < 12; i++) {
+                    document.getElementById("ben10_" + (i + 1)).style.display = "block"
+                }
+            }
+            if (disnep % 2 != 0) {
+                console.log("disnep " + disnep);
+                for (let i = 0; i < 25; i++) {
+                    document.getElementById("disnep_" + (i + 1)).style.display = "block"
+                }
+            }
+            if (pixar % 2 != 0) {
+                console.log("pixar " + pixar);
+                for (let i = 0; i < 31; i++) {
+                    document.getElementById("pixar_" + (i + 1)).style.display = "block"
+                }
+            }
+            if (marvel % 2 == 0 && ben10 % 2 == 0 && disnep % 2 == 0 && pixar % 2 == 0) {
+                console.log("box empty");
+                marvel = 0;
+                ben10 = 0;
+                disnep = 0;
+                pixar = 0;
+                document.getElementById("heading2").innerHTML = "ALL PRODUCTS";
+                for (let i = 0; i < 18; i++) {
+                    document.getElementById("marvel_" + (i + 1)).style.display = "block"
+                }
+                for (let i = 0; i < 12; i++) {
+                    document.getElementById("ben10_" + (i + 1)).style.display = "block"
+                }
+                for (let i = 0; i < 25; i++) {
+                    document.getElementById("disnep_" + (i + 1)).style.display = "block"
+                }
+                for (let i = 0; i < 31; i++) {
+                    document.getElementById("pixar_" + (i + 1)).style.display = "block"
+                }
+            }
+        }
+
+        function clearBrand() {
+            marvel = 0;
+            ben10 = 0;
+            disney = 0;
+            pixar = 0;
+            document.getElementById("heading2").innerHTML = "ALL PRODUCTS";
+            document.getElementById("bBox_1").checked = false;
+            document.getElementById("bBox_2").checked = false;
+            document.getElementById("bBox_3").checked = false;
+            document.getElementById("bBox_4").checked = false;
+            for (let i = 0; i < 18; i++) {
+                document.getElementById("marvel_" + (i + 1)).style.display = "block"
+            }
+            for (let i = 0; i < 12; i++) {
+                document.getElementById("ben10_" + (i + 1)).style.display = "block"
+            }
+            for (let i = 0; i < 25; i++) {
+                document.getElementById("disnep_" + (i + 1)).style.display = "block"
+            }
+            for (let i = 0; i < 31; i++) {
+                document.getElementById("pixar_" + (i + 1)).style.display = "block"
+            }
+        }
+
+        function age() {
+            if (document.getElementById("bBox_1").checked == true || document.getElementById("bBox_2").checked == true || document.getElementById("bBox_3").checked == true || document.getElementById("bBox_4").checked == true) {
+                clearBrand();
+            }
+            document.getElementById("heading2").innerHTML = "AGE-WISE";
+            for (let i = 0; i < 18; i++) {
+                document.getElementById("marvel_" + (i + 1)).style.display = "none"
+            }
+            for (let i = 0; i < 12; i++) {
+                document.getElementById("ben10_" + (i + 1)).style.display = "none"
+            }
+            for (let i = 0; i < 25; i++) {
+                document.getElementById("disnep_" + (i + 1)).style.display = "none"
+            }
+            for (let i = 0; i < 31; i++) {
+                document.getElementById("pixar_" + (i + 1)).style.display = "none"
+            }
+            const Below_5 = new Array("marvel_7", "pixar_1", "pixar_23", "ben10_2", "disnep_2", "disnep_5", "disnep_7", "disnep_8", "disnep_9", "disnep_10", "disnep_11", "disnep_12", "disnep_13", "disnep_17", "disnep_18", "disnep_21", "disnep_22", "disnep_24", "disnep_25");
+            const Between_5_to_10 = new Array("marvel_1", "marvel_2", "marvel_4", "marvel_5", "marvel_8", "marvel_9", "marvel_10", "marvel_11", "marvel_12", "marvel_14", "marvel_15", "marvel_16", "marvel_17", "marvel_18", "pixar_2", "pixar_3", "pixar_4", "pixar_5", "pixar_6", "pixar_7", "pixar_8", "pixar_10", "pixar_11", "pixar_14", "pixar_15", "pixar_17", "pixar_24", "pixar_25", "pixar_26", "pixar_27", "pixar_28", "pixar_29", "pixar_30", "pixar_31", "ben10_3", "ben10_7", "ben10_8", "ben10_9", "disnep_1", "disnep_3", "disnep_4", "disnep_14", "disnep_15", "disnep_16", "disnep_19", "disnep_20", "disnep_23");
+            const Above_10 = new Array("marvel_3", "marvel_6", "marvel_13", "pixar_9", "pixar_12", "pixar_13", "pixar_16", "pixar_18", "pixar_19", "pixar_20", "pixar_21", "pixar_22", "ben10_1", "ben10_4", "ben10_5", "ben10_6", "ben10_10", "ben10_11", "ben10_12", "disnep_6");
+            if (document.getElementById("aBox_1").checked == true) {
+                // document.getElementById(Below_5[0]).style.display = "block";
+                for (let i = 0; i < Below_5.length; i++) {
+                    document.getElementById(Below_5[i]).style.display = "block";
+                }
+            }
+            if (document.getElementById("aBox_2").checked == true) {
+                // document.getElementById(Below_5[0]).style.display = "block";
+                for (let i = 0; i < Between_5_to_10.length; i++) {
+                    document.getElementById(Between_5_to_10[i]).style.display = "block";
+                }
+            }
+            if (document.getElementById("aBox_3").checked == true) {
+                // document.getElementById(Below_5[0]).style.display = "block";
+                for (let i = 0; i < Above_10.length; i++) {
+                    document.getElementById(Above_10[i]).style.display = "block";
+                }
+            }
+            if (document.getElementById("aBox_1").checked != true && document.getElementById("aBox_2").checked != true && document.getElementById("aBox_3").checked != true) {
+                console.log("box empty");
+                document.getElementById("heading2").innerHTML = "ALL PRODUCTS";
+                for (let i = 0; i < 18; i++) {
+                    document.getElementById("marvel_" + (i + 1)).style.display = "block"
+                }
+                for (let i = 0; i < 12; i++) {
+                    document.getElementById("ben10_" + (i + 1)).style.display = "block"
+                }
+                for (let i = 0; i < 25; i++) {
+                    document.getElementById("disnep_" + (i + 1)).style.display = "block"
+                }
+                for (let i = 0; i < 31; i++) {
+                    document.getElementById("pixar_" + (i + 1)).style.display = "block"
+                }
+            }
+        }
+
+        function clearAge() {
+            document.getElementById("heading2").innerHTML = "ALL PRODUCTS";
+            document.getElementById("aBox_1").checked = false;
+            document.getElementById("aBox_2").checked = false;
+            document.getElementById("aBox_3").checked = false;
+            for (let i = 0; i < 18; i++) {
+                document.getElementById("marvel_" + (i + 1)).style.display = "block"
+            }
+            for (let i = 0; i < 12; i++) {
+                document.getElementById("ben10_" + (i + 1)).style.display = "block"
+            }
+            for (let i = 0; i < 25; i++) {
+                document.getElementById("disnep_" + (i + 1)).style.display = "block"
+            }
+            for (let i = 0; i < 31; i++) {
+                document.getElementById("pixar_" + (i + 1)).style.display = "block"
+            }
+        }
+
+        // function buy_now(name, pic, price, link) {
+        //     document.body.style.opacity = 0.75;
+        //     document.getElementById("arrow").style.display = "none";
+        //     document.getElementById("buy_now_bill").style.display = "block";
+        //     // document.getElementById("bill-img").innerHTML='<img src='+ pic+ ' alt="picture" width="300px" height="300px">'
+        //     document.getElementById("bill-img").innerHTML = '<a href=' + link + '><img src=' + pic + ' alt="picture" width="300px" height="300px"></a>';
+        //     // document.getElementById("cart-continue").innerHTML = '<button type="button" class="btn btn-success" onclick="add_to_cart(' + name + ',' + pic + ',' + price + ',' + link + ') discard()">ADD TO CART AND SHOP MORE</button>'
+        //     document.getElementById("pro-name").innerHTML = name;
+        //     document.getElementById("price").innerHTML = parseFloat(price);
+        //     document.getElementById("tprice").innerHTML = "$" + parseFloat(price);
+        //     console.log("working");
+        //     // document.getElementById("buy_now_bill").style.opacity=1;
+        //     setTimeout(function () {
+        //         document.body.style.overflow = "hidden"
+        //     }, 3000);
+        // }
+
+        // function vary() {
+        //     var quantity = document.getElementById("quantity").value;
+        //     var price = document.getElementById("price").innerHTML;
+        //     // alert(quantity+"  "+price);
+        //     document.getElementById("tprice").innerHTML = "$" + parseFloat(price) * parseInt(quantity);
+        // }
+
+        // function discard() {
+        //     if (confirm("Do You Really Want To Discard Order?")) {
+        //         document.body.style.opacity = 1;
+        //         document.getElementById("buy_now_bill").style.display = "none";
+        //         document.getElementById("arrow").style.display = "block";
+        //         document.body.style.overflow = "auto";
+        //         setTimeout(function () {
+        //             document.body.style.overflowX = "hidden"
+        //         }, 500);
+        //     }
+        // }
+        // cart
+        update();
+        // countCheck();
+        let check = document.getElementById("counter").innerHTML;
+        console.log(check);
+        if (check == 0) {
+            console.log(check);
+            document.getElementById("counter").style.visibility = 'hidden';
+            document.getElementById("counter").style.backgroundColor = "red";
+        }
+        else {
+            document.getElementById("counter").style.visibility = 'visible';
+        }
+
+
+
+    </script>
+</body>
+
+</html>
